@@ -4,21 +4,21 @@ public class VariablesEx_04 {
 
 	public static void main(String[] args) {
 		
-		//º¯¼ö ¼±¾ğ - doubleÇü heightº¯¼ö
-		double height; //»ç¶÷ÀÇ Å°
+		//ë³€ìˆ˜ ì„ ì–¸ - doubleí˜• heightë³€ìˆ˜
+		double height; //ì‚¬ëŒì˜ í‚¤
 		
-		//º¯¼ö¿¡ °ª ´ëÀÔ;
+		//ë³€ìˆ˜ì— ê°’ ëŒ€ì…;
 		height = 200.5;
 		
-		//º¯¼öÀÇ °ª Ãâ·Â
-		System.out.println("height º¯¼öÀÇ °ªÀº " + height + "cm ÀÔ´Ï´Ù.");
-		// + ±âÈ£ : ¹®ÀÚ¿­ ¿¬°á °¡´É
+		//ë³€ìˆ˜ì˜ ê°’ ì¶œë ¥
+		System.out.println("height ë³€ìˆ˜ì˜ ê°’ì€ " + height + "cm ì…ë‹ˆë‹¤.");
+		// + ê¸°í˜¸ : ë¬¸ìì—´ ì—°ê²° ê°€ëŠ¥
 		
 		//--------------------------------------------------------------------
 		
 		double data;
 		
-		data =  height + 100; //µ¡¼À
+		data =  height + 100; //ë§ì…ˆ
 		
 		System.out.println("data : " + data);
 		
@@ -34,7 +34,7 @@ public class VariablesEx_04 {
 		
 		boolean isRight;
 		
-		isRight = false; //°ÅÁş
+		isRight = false; //ê±°ì§“
 		
 		System.out.println(isRight);
 	

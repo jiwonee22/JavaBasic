@@ -4,48 +4,48 @@ public class VariablesQuiz {
 
 	public static void main(String[] args) {
 		
-		//1. º¯¼ö¿¡ ¾Ë¸ÂÀº Å¸ÀÔ Ã£±â
+		//1. ë³€ìˆ˜ì— ì•Œë§ì€ íƒ€ì… ì°¾ê¸°
 		
-		//ÀÌ¸§ - String
-		//¼ºº° - int
-		//³ªÀÌ - ³²/¿©, char
-		//Å° - double
+		//ì´ë¦„ - String
+		//ì„±ë³„ - int
+		//ë‚˜ì´ - ë‚¨/ì—¬, char
+		//í‚¤ - double
 
 		
-		//2. º¯¼ö ¼±¾ğ
-		String name; //ÀÌ¸§
-		int age; //³ªÀÌ
-		char gender; //¼ºº°
-		double height; //Å°
+		//2. ë³€ìˆ˜ ì„ ì–¸
+		String name; //ì´ë¦„
+		int age; //ë‚˜ì´
+		char gender; //ì„±ë³„
+		double height; //í‚¤
 		
 		
-		//3. º¯¼ö¿¡ °ª ´ëÀÔ
+		//3. ë³€ìˆ˜ì— ê°’ ëŒ€ì…
 		name = "Alice";
 		age = 99;
-		gender = '³²';
+		gender = 'ë‚¨';
 		height = 222.66;
 		
-		System.out.println("ÀÌ¸§ : " + name);
-		System.out.println("³ªÀÌ : " + age);
-		System.out.println("¼ºº° : " + gender);
-		System.out.println("Å° : " + height);
+		System.out.println("ì´ë¦„ : " + name);
+		System.out.println("ë‚˜ì´ : " + age);
+		System.out.println("ì„±ë³„ : " + gender);
+		System.out.println("í‚¤ : " + height);
 		
 		System.out.println("----------------------------");
 		
-		System.out.println("ÀÌ¸§ : " + name + ", ³ªÀÌ : " + age + ", ¼ºº° : " + gender + ", Å° : " + height);
+		System.out.println("ì´ë¦„ : " + name + ", ë‚˜ì´ : " + age + ", ì„±ë³„ : " + gender + ", í‚¤ : " + height);
 	
 		System.out.println("----------------------------");
 		
-		//** println - ÁÖ¾îÁø ¹®ÀÚ¿­À» Ãâ·ÂÇÏ°í °³Çà(ÁÙ¹Ù²Ş)
-		//** print - ÁÖ¾îÁø ¹®ÀÚ¿­À» Ãâ·Â(ÁÙ¹Ù²Ş X)
+		//** println - ì£¼ì–´ì§„ ë¬¸ìì—´ì„ ì¶œë ¥í•˜ê³  ê°œí–‰(ì¤„ë°”ê¿ˆ)
+		//** print - ì£¼ì–´ì§„ ë¬¸ìì—´ì„ ì¶œë ¥(ì¤„ë°”ê¿ˆ X)
 		
-		System.out.print("ÀÌ¸§ : " + name);
-		System.out.print("\n³ªÀÌ : " + age);
+		System.out.print("ì´ë¦„ : " + name);
+		System.out.print("\në‚˜ì´ : " + age);
 		System.out.println();
 		
-		System.out.print("¼ºº° : " + gender);
+		System.out.print("ì„±ë³„ : " + gender);
 		
-		//** °³Çà¹®ÀÚ(ÁÙ¹Ù²Ş¹®ÀÚ) - \n
+		//** ê°œí–‰ë¬¸ì(ì¤„ë°”ê¿ˆë¬¸ì) - \n
 
 
 	}

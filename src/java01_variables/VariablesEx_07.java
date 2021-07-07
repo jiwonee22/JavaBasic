@@ -4,22 +4,22 @@ public class VariablesEx_07 {
 
 	public static void main(String[] args) {
 	
-		//ÀÚ¹ÙÀÇ ÀÚ·áÇü(Data Type)
-		//	8°¡Áö ±âº»µ¥ÀÌÅÍÅ¸ÀÔ(Primitive Type)
-		//	ÂüÁ¶Çü µ¥ÀÌÅÍÅ¸ÀÔ(Reference Type) - Å¬·¡½º(°´Ã¼ÁöÇâ)
+		//ìë°”ì˜ ìë£Œí˜•(Data Type)
+		//	8ê°€ì§€ ê¸°ë³¸ë°ì´í„°íƒ€ì…(Primitive Type)
+		//	ì°¸ì¡°í˜• ë°ì´í„°íƒ€ì…(Reference Type) - í´ë˜ìŠ¤(ê°ì²´ì§€í–¥)
 		
 		//---------------------------------------------------------------------
 		
-		//String Å¸ÀÔ
-		//	¹®ÀÚ¿­
-		//	ÂüÁ¶Çü µ¥ÀÌÅÍÅ¸ÀÔ Áß ÇÏ³ª
+		//String íƒ€ì…
+		//	ë¬¸ìì—´
+		//	ì°¸ì¡°í˜• ë°ì´í„°íƒ€ì… ì¤‘ í•˜ë‚˜
 		
-		//	""Å«µû¿ÈÇ¥·Î ¿©·¯ °³ÀÇ ¹®ÀÚ¸¦ °¨½Î¼­ Ç¥ÇöÇÑ´Ù
-		// 	-> StringÇü ¸®ÅÍ·² »ó¼ö
+		//	""í°ë”°ì˜´í‘œë¡œ ì—¬ëŸ¬ ê°œì˜ ë¬¸ìë¥¼ ê°ì‹¸ì„œ í‘œí˜„í•œë‹¤
+		// 	-> Stringí˜• ë¦¬í„°ëŸ´ ìƒìˆ˜
 		
-		String fruit; //¹®ÀÚ¿­ º¯¼ö ¼±¾ğ
-		fruit = "Apple"; //¹®ÀÚ¿­»ó¼ö "Apple" °ªÀ» fruitº¯¼ö¿¡ ´ëÀÔ
-		System.out.println(fruit); //¹®ÀÚ¿­ º¯¼ö fruit Ãâ·Â
+		String fruit; //ë¬¸ìì—´ ë³€ìˆ˜ ì„ ì–¸
+		fruit = "Apple"; //ë¬¸ìì—´ìƒìˆ˜ "Apple" ê°’ì„ fruitë³€ìˆ˜ì— ëŒ€ì…
+		System.out.println(fruit); //ë¬¸ìì—´ ë³€ìˆ˜ fruit ì¶œë ¥
 		
 		fruit = "Banana";
 		System.out.println(fruit);

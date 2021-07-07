@@ -1,13 +1,13 @@
 package java01_variables;
 
-//ÀÚµ¿¿Ï¼º ´ÜÃàÅ° : ctrl + space
+//ìë™ì™„ì„± ë‹¨ì¶•í‚¤ : ctrl + space
 
 public class VariablesEx_03 {
 	
 	public static void main(String[] args) {
 		
 		int data;
-		//¾²·¹±â°ª(garbage value)ÀÌ µé¾î°¡ÀÖ´Â »óÅÂ°¡ µÈ´Ù
+		//ì“°ë ˆê¸°ê°’(garbage value)ì´ ë“¤ì–´ê°€ìˆëŠ” ìƒíƒœê°€ ëœë‹¤
 		
 		
 		data = 13;
@@ -16,8 +16,8 @@ public class VariablesEx_03 {
 		
 		//----------------------------------------
 		
-		int data2 = 123; //¼±¾ğ°ú µ¿½Ã¿¡ ÃÊ±âÈ­
-		//¾²·¹±â°ªÀÌ µé¾î°¡Áö ¾Ê°í °ğ¹Ù·Î ÃÊ±âÈ­µÈ´Ù
+		int data2 = 123; //ì„ ì–¸ê³¼ ë™ì‹œì— ì´ˆê¸°í™”
+		//ì“°ë ˆê¸°ê°’ì´ ë“¤ì–´ê°€ì§€ ì•Šê³  ê³§ë°”ë¡œ ì´ˆê¸°í™”ëœë‹¤
 		
 		System.out.println(data2);
 		

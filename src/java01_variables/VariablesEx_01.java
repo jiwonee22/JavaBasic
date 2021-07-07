@@ -1,28 +1,28 @@
-//ÆĞÅ°Áö ¼±¾ğ - ¼Ò½ºÄÚµå°¡ Æ÷ÇÔµÈ ÆĞÅ°Áö¸¦ ³ªÅ¸³½´Ù
+//íŒ¨í‚¤ì§€ ì„ ì–¸ - ì†ŒìŠ¤ì½”ë“œê°€ í¬í•¨ëœ íŒ¨í‚¤ì§€ë¥¼ ë‚˜íƒ€ë‚¸ë‹¤
 package java01_variables;
 
-//ÇÑ ÁÙ ÁÖ¼® Åä±Û ´ÜÃàÅ° : ctrl + shift + c
+//í•œ ì¤„ ì£¼ì„ í† ê¸€ ë‹¨ì¶•í‚¤ : ctrl + shift + c
 
-//Å¬·¡½º Á¤ÀÇ - ÇÁ·Î±×·¥ÀÇ ±âº» ±¸¼º¿ä¼Ò (°´Ã¼ÁöÇâ¿¡¼­ ÀÚ¼¼È÷ ´Ù·ë)
+//í´ë˜ìŠ¤ ì •ì˜ - í”„ë¡œê·¸ë¨ì˜ ê¸°ë³¸ êµ¬ì„±ìš”ì†Œ (ê°ì²´ì§€í–¥ì—ì„œ ìì„¸íˆ ë‹¤ë£¸)
 public class VariablesEx_01 {
 
-	//¸ŞÀÎ ¸Ş¼Òµå Á¤ÀÇ - ÇÁ·Î±×·¥ÀÇ ½ÃÀÛÁ¡
+	//ë©”ì¸ ë©”ì†Œë“œ ì •ì˜ - í”„ë¡œê·¸ë¨ì˜ ì‹œì‘ì 
 	public static void main(String[] args) {
-//		System.out.println("µ¿ÀÛ Å×½ºÆ®");
+//		System.out.println("ë™ì‘ í…ŒìŠ¤íŠ¸");
 		
 		
-		System.out.println(123);	//Á¤¼öÇü int
-		System.out.println(3.14);	//½Ç¼öÇü double
-		System.out.println('Q');	//¹®ÀÚÇü char
-		System.out.println(true);	//³í¸®Çü boolean
+		System.out.println(123);	//ì •ìˆ˜í˜• int
+		System.out.println(3.14);	//ì‹¤ìˆ˜í˜• double
+		System.out.println('Q');	//ë¬¸ìí˜• char
+		System.out.println(true);	//ë…¼ë¦¬í˜• boolean
 		
 		//---------------------------------------------
-		System.out.println((char)81); // Q Ãâ·ÂµÊ
-		System.out.println((int)'°¡'); // 44032 Ãâ·ÂµÊ
-		System.out.println((int)'°¢'); // 44033 Ãâ·ÂµÊ
+		System.out.println((char)81); // Q ì¶œë ¥ë¨
+		System.out.println((int)'ê°€'); // 44032 ì¶œë ¥ë¨
+		System.out.println((int)'ê°'); // 44033 ì¶œë ¥ë¨
 		//---------------------------------------------
 		
-		System.out.println("¹İ°¡¿ö¿ä!"); //¹®ÀÚ¿­(String Å¸ÀÔ) - ÂüÁ¶Çü
+		System.out.println("ë°˜ê°€ì›Œìš”!"); //ë¬¸ìì—´(String íƒ€ì…) - ì°¸ì¡°í˜•
 
 		
 		
