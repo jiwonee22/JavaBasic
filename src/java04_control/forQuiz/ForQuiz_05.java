@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class ForQuiz_05 {
 
-	// 1¿¡¼­ºÎÅÍ ÀÔ·ÂµÈ ¾î¶² ¼ö±îÁö ³»¿¡ ÀÖ´Â ¼Ò¼ö¸¦
-	//Ã£´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ¶ó.
-	//		* ¼Ò¼ö = 1 °ú ÀÚ½ÅÀÇ ¼ıÀÚ·Î¸¸ ³ª´©¾î ¶³¾îÁö´Â ¼ö
+	// 1ì—ì„œë¶€í„° ì…ë ¥ëœ ì–´ë–¤ ìˆ˜ê¹Œì§€ ë‚´ì— ìˆëŠ” ì†Œìˆ˜ë¥¼
+	//ì°¾ëŠ” í”„ë¡œê·¸ë¨ì„ ì‘ì„±í•˜ë¼.
+	//		* ì†Œìˆ˜ = 1 ê³¼ ìì‹ ì˜ ìˆ«ìë¡œë§Œ ë‚˜ëˆ„ì–´ ë–¨ì–´ì§€ëŠ” ìˆ˜
 	//		* ex) 2,3,5,7,11,13, ...
 
 	public static void main(String[] args) {
@@ -17,31 +17,31 @@ public class ForQuiz_05 {
 		int num = sc.nextInt();
 		System.out.println();
 
-		boolean isNotPrime = false; //¼Ò¼öÆÇº° ÇÃ·¡±×
+		boolean isNotPrime = false; //ì†Œìˆ˜íŒë³„ í”Œë˜ê·¸
 
 		for(int i=1; i<=num; i++) {
 
-			//¿¹¿Ü»óÈ² : 1Àº ¼Ò¼ö°¡ ¾Æ´Ô
+			//ì˜ˆì™¸ìƒí™© : 1ì€ ì†Œìˆ˜ê°€ ì•„ë‹˜
 			if( i==1 ) {
-				System.out.println(i + " ¼Ò¼ö°¡ ¾Æ´Ô");
+				System.out.println(i + " ì†Œìˆ˜ê°€ ì•„ë‹˜");
 				continue;
 			}
 			
-			//i°ª¿¡ ´ëÇÑ ¼Ò¼öÆÇº° ÇÃ·¡±× ÃÊ±âÈ­
+			//iê°’ì— ëŒ€í•œ ì†Œìˆ˜íŒë³„ í”Œë˜ê·¸ ì´ˆê¸°í™”
 			isNotPrime = false; 
 
-			//i°ª¿¡ ´ëÇÑ ¼Ò¼ö ÆÇº°
+			//iê°’ì— ëŒ€í•œ ì†Œìˆ˜ íŒë³„
 			for(int j=2; j<=i-1; j++) {
-				if(i%j == 0) { //¾à¼ö°¡ Á¸ÀçÇÔ
-					isNotPrime = true; //¼Ò¼ö°¡ ¾Æ´Ô!
+				if(i%j == 0) { //ì•½ìˆ˜ê°€ ì¡´ì¬í•¨
+					isNotPrime = true; //ì†Œìˆ˜ê°€ ì•„ë‹˜!
 				}
 
 			}
 
 			if(isNotPrime) {
-				System.out.println(i + " ¼Ò¼ö°¡ ¾Æ´Ô");
+				System.out.println(i + " ì†Œìˆ˜ê°€ ì•„ë‹˜");
 			} else { 
-				System.out.println(i + " ¼Ò¼ö");
+				System.out.println(i + " ì†Œìˆ˜");
 			}
 		}
 	}	

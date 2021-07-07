@@ -3,9 +3,9 @@ package java04_control.star;
 public class Star_05 {
 	public static void main(String[] args) {
 
-		for(int i=0; i<5; i++) { //iÇà, 0~4, 5¹ø
+		for(int i=0; i<5; i++) { //ií–‰, 0~4, 5ë²ˆ
 
-			for(int j=0; j<5; j++) { //j¿­, 0~4, 5¹ø
+			for(int j=0; j<5; j++) { //jí–‰, 0~4, 5ë²ˆ
 				System.out.print(j+1);
 			}
 			System.out.println();

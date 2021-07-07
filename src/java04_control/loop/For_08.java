@@ -3,34 +3,34 @@ package java04_control.loop;
 public class For_08 {
 	public static void main(String[] args) {
 
-		// Á¦¾î¹® ÁßÃ¸½ÃÄÑ »ç¿ëÇÏ±â
+		// ì œì–´ë¬¸ ì¤‘ì²©ì‹œì¼œ ì‚¬ìš©í•˜ê¸°
 
-		//ifÁßÃ¸
+		//ifì¤‘ì²©
 
 		int num = 11;
 
 		if( num>=1 ) {
-			System.out.println("1º¸´Ù Å©°Å³ª °°´Ù");
+			System.out.println("1ë³´ë‹¤ í¬ê±°ë‚˜ ê°™ë‹¤");
 
 			if ( num <= 100) {
-				System.out.println("1º¸´Ù Å©°Å³ª °°´Ù");
+				System.out.println("1ë³´ë‹¤ í¬ê±°ë‚˜ ê°™ë‹¤");
 								
-				System.out.println("100º¸´Ù ÀÛ°Å³ª °°´Ù");
+				System.out.println("100ë³´ë‹¤ ì‘ê±°ë‚˜ ê°™ë‹¤");
 				
 			}//if ( num <= 100) end
 			
-			System.out.println("1º¸´Ù Å©°Å³ª °°´Ù");
+			System.out.println("1ë³´ë‹¤ í¬ê±°ë‚˜ ê°™ë‹¤");
 			
 		}//if( num>=1 ) end
 		
 		//----------------------------------------------------------------------------
 		System.out.println("---------------------");
 		
-		//for¹®°ú if¹® ÁßÃ¸
-		for ( int i=0; i<10; i++ ) { // i, 0~9, 10¹ø
+		//forë¬¸ê³¼ ifë¬¸ ì¤‘ì²©
+		for ( int i=0; i<10; i++ ) { // i, 0~9, 10ë²ˆ
 			
-			if ( i%2==0 ) { //Â¦¼öÀÎ °æ¿ì
-				 System.out.println("Â¦¼ö : " + i);
+			if ( i%2==0 ) { //ì§ìˆ˜ì¸ ê²½ìš°
+				 System.out.println("ì§ìˆ˜ : " + i);
 			} //if ( i%2==0 ) end
 			
 			
@@ -39,18 +39,13 @@ public class For_08 {
 		//----------------------------------------------------------------------------
 		System.out.println("-------------------------");
 		
-		for( int i=0; i<10; i+=2 ) { //i, 0 2 4 6 8, 5¹ø
-			System.out.println("Â¦¼ö : " + i);
+		for( int i=0; i<10; i+=2 ) { //i, 0 2 4 6 8, 5ë²ˆ
+			System.out.println("ì§ìˆ˜ : " + i);
 		} //for( int i=0; i<10; i+=2 ) end
-		
-		
-		
-		
-		
-		
 		
 		
 		
 	}//main end
 
 }//class end
+

@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class DoWhile_Menu {
 	public static void main(String[] args) {
 
-		//¸Ş´º ¹øÈ£ »ó¼ö
+		//ë©”ë‰´ ë²ˆí˜¸ ìƒìˆ˜
 		final int HELLO_MENU = 1;
 		final int NAME_MENU = 2;
 		final int GENDER_MENU = 3;
@@ -13,32 +13,32 @@ public class DoWhile_Menu {
 
 		//-----------------------------------------------------
 
-		Scanner sc = new Scanner(System.in); //ÀÔ·Â°´Ã¼
+		Scanner sc = new Scanner(System.in); //ì…ë ¥ê°ì²´
 
-		int select = 0; //¸Ş´º ¼±ÅÃ º¯¼ö
+		int select = 0; //ë©”ë‰´ ì„ íƒ ë³€ìˆ˜
 
 		do {
 			System.out.println("===============================");
 			System.out.println("\tM  e  n  u");
 			System.out.println("===============================");
-			System.out.println("\t1. Hello World Ãâ·Â");
-			System.out.println("\t2. ÀÌ¸§ Ãâ·Â");
-			System.out.println("\t3. ¼ºº° Ãâ·Â");
-			System.out.println("\t4. Á¾·á");
+			System.out.println("\t1. Hello World ì¶œë ¥");
+			System.out.println("\t2. ì´ë¦„ ì¶œë ¥");
+			System.out.println("\t3. ì„±ë³„ ì¶œë ¥");
+			System.out.println("\t4. ì¢…ë£Œ");
 			System.out.println("===============================");
 			
 			System.out.println();
 			System.out.print("\t>> ");
 
 			try {
-				//	¹®Á¦°¡ ÀÖÀ» ¼ö ÀÖ´Â ÄÚµå¸¦ ÀÛ¼ºÇÏ´Â ¿µ¿ª
-				select = sc.nextInt(); //¸Ş´º ¼±ÅÃ
+				//	ë¬¸ì œê°€ ìˆì„ ìˆ˜ ìˆëŠ” ì½”ë“œë¥¼ ì‘ì„±í•˜ëŠ” ì˜ì—­
+				select = sc.nextInt(); //ë©”ë‰´ ì„ íƒ
 
 			} catch( Exception e ) {
-				//	tryÂÊ¿¡¼­ ¿¹¿Ü°¡ ¹ß»ıÇÏ¸é ½ÇÇàµÇ´Â ¿µ¿ª
+				//	tryìª½ì—ì„œ ì˜ˆì™¸ê°€ ë°œìƒí•˜ë©´ ì‹¤í–‰ë˜ëŠ” ì˜ì—­
 
 				System.out.println();
-				System.out.println("\t>> ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä!");
+				System.out.println("\t>> ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”!");
 
 				select = EXIT_MENU;
 			}
@@ -48,23 +48,23 @@ public class DoWhile_Menu {
 				System.out.println("Hello World");
 				break;
 
-			case NAME_MENU: //2.ÀÌ¸§
+			case NAME_MENU: //2.ì´ë¦„
 				System.out.println("Alice");
 				break;
 
-			case GENDER_MENU: //3.¼ºº°
-				System.out.println("¿©");
+			case GENDER_MENU: //3.ì„±ë³„
+				System.out.println("ì—¬");
 				break;
 
-			case EXIT_MENU: //4.Á¾·á
+			case EXIT_MENU: //4.ì¢…ë£Œ
 				System.out.println("Good Bye~");
 				break;
 
 			default:
-				System.out.println("¸Ş´º¸¦ Àß¸ø ¼±ÅÃÇÏ¼Ì½À´Ï´Ù");
+				System.out.println("ë©”ë‰´ë¥¼ ì˜ëª» ì„ íƒí•˜ì…¨ìŠµë‹ˆë‹¤");
 			} //switch end
 
-			//Á¾·á¸Ş´º¸¦ ¼±ÅÃÇÏÁö ¾ÊÀ¸¸é ¹İº¹
+			//ì¢…ë£Œë©”ë‰´ë¥¼ ì„ íƒí•˜ì§€ ì•Šìœ¼ë©´ ë°˜ë³µ
 		} while ( select != EXIT_MENU ) ;
 		
 	} //main end

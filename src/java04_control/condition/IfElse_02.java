@@ -10,12 +10,12 @@ public class IfElse_02 {
 		System.out.print("Input Number : ");
 		int input = sc.nextInt();
 		
-		//	ÀÔ·ÂÇÑ ¼ıÀÚ°¡ Â¦¼ö/È¦¼ö ÆÇº°ÇÏ´Â ÄÚµå ÀÛ¼º
+		//	ì…ë ¥í•œ ìˆ«ìê°€ ì§ìˆ˜/í™€ìˆ˜ íŒë³„í•˜ëŠ” ì½”ë“œ ì‘ì„±
 		
 		if (input % 2 == 1) { 
-			System.out.println("È¦¼öÀÔ´Ï´Ù");
+			System.out.println("í™€ìˆ˜ì…ë‹ˆë‹¤");
 		} else {
-			System.out.println("Â¦¼öÀÔ´Ï´Ù");
+			System.out.println("ì§ìˆ˜ì…ë‹ˆë‹¤");
 		}
 		
 	}

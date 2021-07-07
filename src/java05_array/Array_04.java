@@ -3,10 +3,10 @@ package java05_array;
 public class Array_04 {
 	public static void main(String[] args) {
 		
-		//¹®ÀÚ¿­, String
-		//	charÇüµéÀÇ ÁıÇÕÀÎ char[](¹®ÀÚ ¹è¿­)ÀÇ °³³äÀ» »ç¿ëÇÑ´Ù
+		//ë¬¸ìì—´, String
+		//	charí˜•ë“¤ì˜ ì§‘í•©ì¸ char[](ë¬¸ì ë°°ì—´)ì˜ ê°œë…ì„ ì‚¬ìš©í•œë‹¤
 		
-		//	ÇÏÁö¸¸, char[]°ú StringÀº °°Àº µ¥ÀÌÅÍÅ¸ÀÔÀÌ ¾Æ´Ï´Ù
+		//	í•˜ì§€ë§Œ, char[]ê³¼ Stringì€ ê°™ì€ ë°ì´í„°íƒ€ì…ì´ ì•„ë‹ˆë‹¤
 		
 		//---------------------------------------------------------
 		
@@ -16,20 +16,20 @@ public class Array_04 {
 		
 		//---------------------------------------------------------
 		
-		System.out.println("¹®ÀÚ¿­ÀÇ ±æÀÌ : " + str.length());
-		System.out.println("charÇü ¹è¿­ÀÇ ±æÀÌ : " + chArr.length);
+		System.out.println("ë¬¸ìì—´ì˜ ê¸¸ì´ : " + str.length());
+		System.out.println("charí˜• ë°°ì—´ì˜ ê¸¸ì´ : " + chArr.length);
 		
 		System.out.println("-----------------");
 		
-		System.out.println("¹®ÀÚ¿­ÀÇ ¼¼¹øÂ° ±ÛÀÚ : " + str.charAt(2));
-		System.out.println("¹è¿­ÀÇ ³×¹øÂ° ±ÛÀÚ : " + chArr[3]);
+		System.out.println("ë¬¸ìì—´ì˜ ì„¸ë²ˆì§¸ ê¸€ì : " + str.charAt(2));
+		System.out.println("ë°°ì—´ì˜ ë„¤ë²ˆì§¸ ê¸€ì : " + chArr[3]);
 
 		System.out.println("-----------------");
 
-		// toCharArray() : StringÀ» char[]·Î º¯È¯ÇÏ¿© ¹İÈ¯ÇÏ´Â ±â´É
+		// toCharArray() : Stringì„ char[]ë¡œ ë³€í™˜í•˜ì—¬ ë°˜í™˜í•˜ëŠ” ê¸°ëŠ¥
 		char[] converted = str.toCharArray();
 		
-		System.out.println("¹è¿­ÀÇ ³×¹øÂ° ±ÛÀÚ : " + converted[3]);
+		System.out.println("ë°°ì—´ì˜ ë„¤ë²ˆì§¸ ê¸€ì : " + converted[3]);
 
 	}
 }

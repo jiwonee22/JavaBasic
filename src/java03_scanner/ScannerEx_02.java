@@ -5,21 +5,21 @@ import java.util.Scanner;
 public class ScannerEx_02 {
 	public static void main(String[] args) {
 		
-		//¹®ÀÚ¿­(String) ÀÔ·Â¹Ş±â
+		//ë¬¸ìì—´(String) ì…ë ¥ë°›ê¸°
 		
-		//1. ÀÔ·Â°´Ã¼ º¯¼ö ¼±¾ğ (java.util.Scanner)
+		//1. ì…ë ¥ê°ì²´ ë³€ìˆ˜ ì„ ì–¸ (java.util.Scanner)
 		Scanner input;
 			
-		//2. ÀÔ·Â°´Ã¼ »ı¼º (new)
+		//2. ì…ë ¥ê°ì²´ ìƒì„± (new)
 		input = new Scanner( System.in );
 		
-		//3. ¹®ÀÚ¿­ ÀÔ·Â¹Ş±â (String)
-		System.out.println("¹®ÀÚ¿­À» ÀÔ·ÂÇÏ¼¼¿ä");
-		System.out.print("¹®ÀÚ¿­À» ÀÔ·ÂÇÏ¼¼¿ä : ");
+		//3. ë¬¸ìì—´ ì…ë ¥ë°›ê¸° (String)
+		System.out.println("ë¬¸ìì—´ì„ ì…ë ¥í•˜ì„¸ìš”");
+		System.out.print("ë¬¸ìì—´ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 		String str = input.nextLine();
 		
-		//4. ÀÔ·Â¹ŞÀº ¹®ÀÚ¿­ Ãâ·ÂÇÏ±â
-		System.out.println("ÀÔ·ÂÇÑ ³»¿ë : " + str);
+		//4. ì…ë ¥ë°›ì€ ë¬¸ìì—´ ì¶œë ¥í•˜ê¸°
+		System.out.println("ì…ë ¥í•œ ë‚´ìš© : " + str);
 		
 	}
 }

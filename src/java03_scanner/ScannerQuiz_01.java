@@ -4,62 +4,62 @@ import java.util.Scanner;
 
 public class ScannerQuiz_01 {
 	
-//	+ »ï°¢Çü³ĞÀÌ ±¸ÇÏ±â
-//	 - »ï°¢Çü³ĞÀÌ = (¹Øº¯ * ³ôÀÌ)/2
-//	 - ¹Øº¯°ú ³ôÀÌ¸¦ ÀÔ·Â¹Ş¾Æ °è»ê
+//	+ ì‚¼ê°í˜•ë„“ì´ êµ¬í•˜ê¸°
+//	 - ì‚¼ê°í˜•ë„“ì´ = (ë°‘ë³€ * ë†’ì´)/2
+//	 - ë°‘ë³€ê³¼ ë†’ì´ë¥¼ ì…ë ¥ë°›ì•„ ê³„ì‚°
 
 	public static void main(String[] args) {
 		
-		//1. ÇÊ¿äÇÑ º¯¼ö ¼±¾ğ (+µ¥ÀÌÅÍÅ¸ÀÔ)
-		//	¹Øº¯ int
-		//	³ôÀÌ int
-		//	»ï°¢Çü³ĞÀÌ double
-		//	ÀÔ·Â°´Ã¼ Scanner
+		//1. í•„ìš”í•œ ë³€ìˆ˜ ì„ ì–¸ (+ë°ì´í„°íƒ€ì…)
+		//	ë°‘ë³€ int
+		//	ë†’ì´ int
+		//	ì‚¼ê°í˜•ë„“ì´ double
+		//	ì…ë ¥ê°ì²´ Scanner
 		
-		int base; //¹Øº¯
-		int height; //³ôÀÌ
+		int base; //ë°‘ë³€
+		int height; //ë†’ì´
 		
-		double area; //³ĞÀÌ
+		double area; //ë„“ì´
 		
-		Scanner in = new Scanner(System.in); //Å°º¸µå ÀÔ·Â °´Ã¼
+		Scanner in = new Scanner(System.in); //í‚¤ë³´ë“œ ì…ë ¥ ê°ì²´
 		
-		//2. µ¥ÀÌÅÍ ÀÔ·Â
-		// ¹Øº¯, ³ôÀÌ
+		//2. ë°ì´í„° ì…ë ¥
+		// ë°‘ë³€, ë†’ì´
 		
-		System.out.print("¹Øº¯ÀÇ ±æÀÌ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("ë°‘ë³€ì˜ ê¸¸ì´ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		base = in.nextInt();
 		
-		System.out.print("³ôÀÌÀÇ ±æÀÌ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("ë†’ì´ì˜ ê¸¸ì´ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		height = in.nextInt();
 		
 //		System.out.println("[TEST] base : " + base);
 //		System.out.println("[TEST] height : " + height);		
 	
 		
-		//3. ¹®Á¦¿¡ ÁÖ¾îÁø °è»ê
+		//3. ë¬¸ì œì— ì£¼ì–´ì§„ ê³„ì‚°
 		
 		area = base * height / (double)2;
 		
 //		System.out.println("[TEST] area : " + area);
 		
-		//4. °á°ú Ãâ·Â
-		System.out.println("¹Øº¯ : " + base
-				+ ", ³ôÀÌ : " + height
-				+ "ÀÎ »ï°¢ÇüÀÇ ³ĞÀÌ´Â "
-				+ area + " ÀÔ´Ï´Ù");
+		//4. ê²°ê³¼ ì¶œë ¥
+		System.out.println("ë°‘ë³€ : " + base
+				+ ", ë†’ì´ : " + height
+				+ "ì¸ ì‚¼ê°í˜•ì˜ ë„“ì´ëŠ” "
+				+ area + " ì…ë‹ˆë‹¤");
 		
 //		Scanner sc = new Scanner(System.in);
 //		
-//		System.out.print("¹Øº¯ : ");
+//		System.out.print("ë°‘ë³€ : ");
 //		int base = sc.nextInt();
 //		
-//		System.out.print("³ôÀÌ : ");
+//		System.out.print("ë†’ì´ : ");
 //		int height = sc.nextInt();
 //		
 //		System.out.println("-----------");
 //		
 //		double area = base * height * 0.5;
-//		System.out.println("³ĞÀÌ : " + area);
+//		System.out.println("ë„“ì´ : " + area);
 
 		
 		

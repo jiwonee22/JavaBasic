@@ -3,8 +3,8 @@ package java04_control.loop;
 public class While_03 {
 	public static void main(String[] args) {
 		
-		//while¹®À» ÀÌ¿ëÇÑ ±¸±¸´Ü Ãâ·Â
-		//	-> 2~9´Ü ÀüºÎ Ãâ·Â
+		//whileë¬¸ì„ ì´ìš©í•œ êµ¬êµ¬ë‹¨ ì¶œë ¥
+		//	-> 2~9ë‹¨ ì „ë¶€ ì¶œë ¥
 		
 		int i=2;
 		while (i<10) {

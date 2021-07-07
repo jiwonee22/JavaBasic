@@ -5,8 +5,8 @@ public class BubbleSort {
 
 		int[] arr = {3,2,5,4,1};
 
-		//--- ¿øº» Ãâ·Â ---
-		System.out.println("--- Á¤·Ä Àü ---");
+		//--- ì›ë³¸ ì¶œë ¥ ---
+		System.out.println("--- ì •ë ¬ ì „ ---");
 		for(int i=0; i<arr.length; i++) {
 			System.out.println(arr[i] + " ");
 		}
@@ -14,13 +14,13 @@ public class BubbleSort {
 		//-----------------
 
 
-		//--- ¹öºí Á¤·Ä ---
+		//--- ë²„ë¸” ì •ë ¬ ---
 
-		for(int i=0; i<arr.length-1; i++) { //ROUND ¹İº¹, length-1¹ø
+		for(int i=0; i<arr.length-1; i++) { //ROUND ë°˜ë³µ, length-1ë²ˆ
 
-			for(int j=0; j<arr.length-1-i; j++) { //°¢ ROUND, i, 0~length-2
+			for(int j=0; j<arr.length-1-i; j++) { //ê° ROUND, i, 0~length-2
 
-				if(arr[j] > arr[j+1]) { //¿ŞÂÊ:arr[1] ¿À¸¥ÂÊ:arr[2]
+				if(arr[j] > arr[j+1]) { //ì™¼ìª½:arr[1] ì˜¤ë¥¸ìª½:arr[2]
 
 					int tmp = arr[j];
 					arr[j] = arr[j+1];
@@ -34,8 +34,8 @@ public class BubbleSort {
 		//-----------------
 
 
-		//--- Á¤·ÄµÈ ÀÌÈÄ Ãâ·Â ---
-		System.out.println("--- Á¤·Ä ÈÄ ---");
+		//--- ì •ë ¬ëœ ì´í›„ ì¶œë ¥ ---
+		System.out.println("--- ì •ë ¬ í›„ ---");
 		for(int i=0; i<arr.length; i++) {
 			System.out.println(arr[i] + " ");
 		}

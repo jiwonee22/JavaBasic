@@ -4,49 +4,49 @@ public class BinaryEx_01 {
 
 	public static void main(String[] args) {
 		
-		// ÀÌÇ×¿¬»êÀÚ - »ê¼ú
+		// ì´í•­ì—°ì‚°ì - ì‚°ìˆ 
 		// + - * / %
 		//---------------------------------------------------------
 		
-		int num1 = 17, num2 = 4; //ÇÇ¿¬»êÀÚ
+		int num1 = 17, num2 = 4; //í”¼ì—°ì‚°ì
 		
-		int result; //¿¬»ê °á°ú ÀúÀå º¯¼ö
+		int result; //ì—°ì‚° ê²°ê³¼ ì €ì¥ ë³€ìˆ˜
 		
 		result = num1 + num2;
-//		result = 17 + 4; //º¯¼öÀÇ °ª È°¿ë
-//		result = 21; //µ¡¼À ¿¬»ê
-		// -> result º¯¼ö¿¡ 21°ªÀÌ ´ëÀÔ
+//		result = 17 + 4; //ë³€ìˆ˜ì˜ ê°’ í™œìš©
+//		result = 21; //ë§ì…ˆ ì—°ì‚°
+		// -> result ë³€ìˆ˜ì— 21ê°’ì´ ëŒ€ì…
 		
-		System.out.println("µ¡¼À °á°ú : " + result);
-		System.out.println(num1 + "°ú " + num2 +"ÀÇ ÇÕ°è : " + result);
+		System.out.println("ë§ì…ˆ ê²°ê³¼ : " + result);
+		System.out.println(num1 + "ê³¼ " + num2 +"ì˜ í•©ê³„ : " + result);
 		
 		System.out.println("------------");
 		
 		// %
-		// ³ª¸ÓÁö ¿¬»êÀÚ
+		// ë‚˜ë¨¸ì§€ ì—°ì‚°ì
 		// modular operator
-		// mod ¿¬»êÀÚ
+		// mod ì—°ì‚°ì
 		
-		result = num1 % num2; // num1À» num2·Î ³ª´« ³ª¸ÓÁö
+		result = num1 % num2; // num1ì„ num2ë¡œ ë‚˜ëˆˆ ë‚˜ë¨¸ì§€
 		result = 17 % 4;
-		System.out.println("³ª¸ÓÁö ¿¬»ê °á°ú : " + result);
+		System.out.println("ë‚˜ë¨¸ì§€ ì—°ì‚° ê²°ê³¼ : " + result);
 
 		System.out.println();
-		System.out.println("--- »ê¼ú ¿¬»êÀÚ ---");
-		System.out.println("num1 + num2 = " + num1 + num2); // Àß¸øµÈ °æ¿ì
+		System.out.println("--- ì‚°ìˆ  ì—°ì‚°ì ---");
+		System.out.println("num1 + num2 = " + num1 + num2); // ì˜ëª»ëœ ê²½ìš°
 		
-//		System.out.println("num1 + num2 = " + 17 + 4); // º¯¼ö È°¿ë
-//		System.out.println("num1 + num2 = 17" + 4); // ¹®ÀÚ¿­ ¿¬°á ¿¬»ê
-//		System.out.println("num1 + num2 = 174"); // ¹®ÀÚ¿­ ¿¬°á ¿¬»ê
+//		System.out.println("num1 + num2 = " + 17 + 4); // ë³€ìˆ˜ í™œìš©
+//		System.out.println("num1 + num2 = 17" + 4); // ë¬¸ìì—´ ì—°ê²° ì—°ì‚°
+//		System.out.println("num1 + num2 = 174"); // ë¬¸ìì—´ ì—°ê²° ì—°ì‚°
 		
 		System.out.println("num1 + num2 = " + (num1 + num2));
 		System.out.println("num1 - num2 = " + (num1 - num2));
 		System.out.println("num1 * num2 = " + (num1 * num2));
-		System.out.println("num1 / num2 = " + (num1 / num2)); // 4.25°¡ ¾Æ´Ñ 4°¡ ³ª¿È (¸ò)
-		System.out.println("num1 % num2 = " + (num1 % num2)); // ³ª¸ÓÁö
+		System.out.println("num1 / num2 = " + (num1 / num2)); // 4.25ê°€ ì•„ë‹Œ 4ê°€ ë‚˜ì˜´ (ëª«)
+		System.out.println("num1 % num2 = " + (num1 % num2)); // ë‚˜ë¨¸ì§€
 		
-		// »ê¼ú¿¬»êÀº ¹İµå½Ã ÇÇ¿¬»êÀÚµéÀÌ °°Àº µ¥ÀÌÅÍ Å¸ÀÔÀÏ ¶§ ¿¬»ê °¡´ÉÇÏ´Ù
-		// »ê¼ú¿¬»êÀÇ °á°ú°ªµµ ÇÇ¿¬»êÀÚÀÇ µ¥ÀÌÅÍÅ¸ÀÔ°ú °°´Ù
+		// ì‚°ìˆ ì—°ì‚°ì€ ë°˜ë“œì‹œ í”¼ì—°ì‚°ìë“¤ì´ ê°™ì€ ë°ì´í„° íƒ€ì…ì¼ ë•Œ ì—°ì‚° ê°€ëŠ¥í•˜ë‹¤
+		// ì‚°ìˆ ì—°ì‚°ì˜ ê²°ê³¼ê°’ë„ í”¼ì—°ì‚°ìì˜ ë°ì´í„°íƒ€ì…ê³¼ ê°™ë‹¤
 		
 		System.out.println("---------");
 		
@@ -56,22 +56,22 @@ public class BinaryEx_01 {
 		System.out.println("---------");
 
 		System.out.println((double)num1 / (double)num2);
-//		System.out.println((double)17 / (double)4); // º¯¼ö È°¿ë
-//		System.out.println(17.0 / 4.0); // Çüº¯È¯
-//		System.out.println(4.25); // ³ª´°¼À (double / double)
+//		System.out.println((double)17 / (double)4); // ë³€ìˆ˜ í™œìš©
+//		System.out.println(17.0 / 4.0); // í˜•ë³€í™˜
+//		System.out.println(4.25); // ë‚˜ëˆ—ì…ˆ (double / double)
 		
 		System.out.println("---------");
 		System.out.println(num1 / (double)num2); // 		int / (double)int
-		System.out.println(17 / (double)4); // º¯¼ö È°¿ë	int / (double)int
-		System.out.println(17 / 4.0); // °­Á¦Çüº¯È¯			int / double
-		System.out.println(17.0 / 4.0); // ÀÚµ¿Çüº¯È¯		double / double
-		System.out.println(4.25); // ³ª´°¼À
+		System.out.println(17 / (double)4); // ë³€ìˆ˜ í™œìš©	int / (double)int
+		System.out.println(17 / 4.0); // ê°•ì œí˜•ë³€í™˜			int / double
+		System.out.println(17.0 / 4.0); // ìë™í˜•ë³€í™˜		double / double
+		System.out.println(4.25); // ë‚˜ëˆ—ì…ˆ
 
-		System.out.println("-----Àß¸øµÈ °æ¿ì-----");
+		System.out.println("-----ì˜ëª»ëœ ê²½ìš°-----");
 		System.out.println((double)(num1 / num2));
-//		System.out.println((double)(17 / 4)); // º¯¼ö È°¿ë	(double)(int / int)
-//		System.out.println((double)(4)); // ³ª´°¼À			(double)(int)
-//		System.out.println(4.0); // °­Á¦Çüº¯È¯				double
+//		System.out.println((double)(17 / 4)); // ë³€ìˆ˜ í™œìš©	(double)(int / int)
+//		System.out.println((double)(4)); // ë‚˜ëˆ—ì…ˆ			(double)(int)
+//		System.out.println(4.0); // ê°•ì œí˜•ë³€í™˜				double
 		
 		System.out.println("---------");
 		
@@ -81,9 +81,10 @@ public class BinaryEx_01 {
 		System.out.println("dNum % 2 = " + (dNum%2));
 		
 		
-		//**ºÎµ¿¼Ò¼öÁ¡ ¿ÀÂ÷ ÁÖÀÇ
+		//**ë¶€ë™ì†Œìˆ˜ì  ì˜¤ì°¨ ì£¼ì˜
 		
 		
 	}
 	
 }
+

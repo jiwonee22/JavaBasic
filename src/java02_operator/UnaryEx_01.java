@@ -3,11 +3,11 @@ package java02_operator;
 public class UnaryEx_01 {
 	public static void main(String[] args) {
 		
-		//´ÜÇ×¿¬»êÀÚ - ºÎÈ£, Sign
+		//ë‹¨í•­ì—°ì‚°ì - ë¶€í˜¸, Sign
 		//	+ -
 		
-		int num1 = -7; //À½¼ö
-		int num2 = +7; //¾ç¼ö
+		int num1 = -7; //ìŒìˆ˜
+		int num2 = +7; //ì–‘ìˆ˜
 		
 		System.out.println( num1 );
 		
@@ -19,7 +19,7 @@ public class UnaryEx_01 {
 		
 		System.out.println(num1);
 		
-		// ! : ³í¸® ºÎÁ¤ ¿¬»êÀÚ
-		// (type) : Çüº¯È¯ ¿¬»êÀÚ		
+		// ! : ë…¼ë¦¬ ë¶€ì • ì—°ì‚°ì
+		// (type) : í˜•ë³€í™˜ ì—°ì‚°ì		
 	}
 }

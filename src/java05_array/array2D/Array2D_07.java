@@ -5,19 +5,19 @@ import java.util.Scanner;
 public class Array2D_07 {
 	public static void main(String[] args) {
 
-		//ÇĞ»ı ¼ºÀû °ü¸® ÇÁ·Î±×·¥
+		//í•™ìƒ ì„±ì  ê´€ë¦¬ í”„ë¡œê·¸ë¨
 
-		//1~3ÇĞ³â
-		//2°³¹İ
-		//4¸íÀÇ ÇĞ»ı
-		//3°ú¸ñ		
-		//Á¡¼ö
+		//1~3í•™ë…„
+		//2ê°œë°˜
+		//4ëª…ì˜ í•™ìƒ
+		//3ê³¼ëª©		
+		//ì ìˆ˜
 
 		int[][][][] sco = new int[3][2][4][3];
 
 		//--------------------------------------------------------------
 
-		//1~3ÇĞ³âÀ» µû·Î »ı¼ºÇÏ±â
+		//1~3í•™ë…„ì„ ë”°ë¡œ ìƒì„±í•˜ê¸°
 		int[][][] sco1 = new int[2][4][3];
 		int[][][] sco2 = new int[2][4][3];
 		int[][][] sco3 = new int[2][4][3];
@@ -25,27 +25,27 @@ public class Array2D_07 {
 		//--------------------------------------------------------------
 
 		//QUIZ.
-		//	2¸íÀÇ ±¹¾î, ¿µ¾î, ¼öÇĞ Á¡¼ö¸¦ Ã³¸®ÇÑ´Ù
-		//	ÇĞ»ıµéÀÇ Á¡¼ö¸¦ ÀÔ·Â¹Ş°í ÃÑÁ¡°ú Æò±ÕÀ» °è»êÇÏ¿© Ãâ·ÂÇÑ´Ù
+		//	2ëª…ì˜ êµ­ì–´, ì˜ì–´, ìˆ˜í•™ ì ìˆ˜ë¥¼ ì²˜ë¦¬í•œë‹¤
+		//	í•™ìƒë“¤ì˜ ì ìˆ˜ë¥¼ ì…ë ¥ë°›ê³  ì´ì ê³¼ í‰ê· ì„ ê³„ì‚°í•˜ì—¬ ì¶œë ¥í•œë‹¤
 
-		//----- Á¾ÇÕ Ãâ·Â -----
+		//----- ì¢…í•© ì¶œë ¥ -----
 
-		//2¸íÀÇ ±¹¾î, ¿µ¾î, ¼öÇĞ Á¡¼ö¸¦ ÀúÀåÇÒ ¹è¿­
+		//2ëª…ì˜ êµ­ì–´, ì˜ì–´, ìˆ˜í•™ ì ìˆ˜ë¥¼ ì €ì¥í•  ë°°ì—´
 		int[][] score = new int[2][3];
 
-		int[] sum = new int[2];//ÃÑÁ¡ ¹è¿­
-		double[] avg = new double[2];//Æò±Õ ¹è¿­
+		int[] sum = new int[2];//ì´ì  ë°°ì—´
+		double[] avg = new double[2];//í‰ê·  ë°°ì—´
 		
 		
-		//--- 2¸í ÇĞ»ıµéÀÇ 3°ú¸ñ Á¡¼ö ÀÔ·Â¹Ş±â ---
+		//--- 2ëª… í•™ìƒë“¤ì˜ 3ê³¼ëª© ì ìˆ˜ ì…ë ¥ë°›ê¸° ---
 		Scanner sc = new Scanner(System.in);
 		
-		String[] subject = { "±¹¾î", "¿µ¾î", "¼öÇĞ" };
+		String[] subject = { "êµ­ì–´", "ì˜ì–´", "ìˆ˜í•™" };
 
-		for(int i=0; i<score.length; i++) { //i¹øÂ° ÇĞ»ı		0~1
-			for(int j=0; j<score[i].length; j++) { //j¹øÂ° °ú¸ñ	0~2
+		for(int i=0; i<score.length; i++) { //ië²ˆì§¸ í•™ìƒ		0~1
+			for(int j=0; j<score[i].length; j++) { //jë²ˆì§¸ ê³¼ëª©	0~2
 
-				System.out.print((i+1) + "¹ø ÇĞ»ıÀÇ " + subject[j] + " Á¡¼ö : ");
+				System.out.print((i+1) + "ë²ˆ í•™ìƒì˜ " + subject[j] + " ì ìˆ˜ : ");
 				score[i][j] =  sc.nextInt();
 				
 			}
@@ -53,8 +53,8 @@ public class Array2D_07 {
 		}
 		
 		//TEST
-//		for(int i=0; i<score.length; i++) { //i¹øÂ° ÇĞ»ı		0~1
-//			for(int j=0; j<score[i].length; j++) { //j¹øÂ° °ú¸ñ	0~2
+//		for(int i=0; i<score.length; i++) { //ië²ˆì§¸ í•™ìƒ		0~1
+//			for(int j=0; j<score[i].length; j++) { //jë²ˆì§¸ ê³¼ëª©	0~2
 //				
 //				System.out.print(score[i][j] + " ");
 //			}
@@ -66,54 +66,54 @@ public class Array2D_07 {
 		
 		
 		
-		//--- ÃÑÁ¡ °è»êÇÏ±â ---
+		//--- ì´ì  ê³„ì‚°í•˜ê¸° ---
 		
-		for(int i=0; i<sum.length; i++) { //i¹øÂ° ÇĞ»ı		0~1
-			for(int j=0; j<score[i].length; j++) { //j¹øÂ° °ú¸ñ	0~2
+		for(int i=0; i<sum.length; i++) { //ië²ˆì§¸ í•™ìƒ		0~1
+			for(int j=0; j<score[i].length; j++) { //jë²ˆì§¸ ê³¼ëª©	0~2
 				
 				sum[i] += score[i][j];
 			}	
 		}
 		
 		//TEST
-//		for(int i=0; i<sum.length; i++) { //i¹øÂ° ÇĞ»ı	
+//		for(int i=0; i<sum.length; i++) { //ië²ˆì§¸ í•™ìƒ	
 //			System.out.print(sum[i] + " ");
 //		}
 
 		//---------------------
 
 		
-		//--- Æò±Õ °è»êÇÏ±â ---
+		//--- í‰ê·  ê³„ì‚°í•˜ê¸° ---
 		
-		for(int i=0; i<avg.length; i++) { //i¹øÂ° ÇĞ»ı
+		for(int i=0; i<avg.length; i++) { //ië²ˆì§¸ í•™ìƒ
 			avg[i] = sum[i] / (double)3;
 		}
 		
 		//TEST
-//		for(int i=0; i<avg.length; i++) { //i¹øÂ° ÇĞ»ı
+//		for(int i=0; i<avg.length; i++) { //ië²ˆì§¸ í•™ìƒ
 //			System.out.print(avg[i] + " ");
 //		}
 		
 		
 		//---------------------
 		
-		//--- ÃÖÁ¾ Ãâ·Â ---
-		// ex)	¹øÈ£	±¹¾î	¿µ¾î	¼öÇĞ	ÃÑÁ¡	Æò±Õ
-		//		1¹ø		xxx		xxx		xxx		xxx		xxx.xx
-		//		2¹ø		xxx		xxx		xxx		xxx		xxx.xx
+		//--- ìµœì¢… ì¶œë ¥ ---
+		// ex)	ë²ˆí˜¸	êµ­ì–´	ì˜ì–´	ìˆ˜í•™	ì´ì 	í‰ê· 
+		//		1ë²ˆ		xxx		xxx		xxx		xxx		xxx.xx
+		//		2ë²ˆ		xxx		xxx		xxx		xxx		xxx.xx
 		
-		System.out.println("¹øÈ£\t±¹¾î\t¿µ¾î\t¼öÇĞ\tÃÑÁ¡\tÆò±Õ");
+		System.out.println("ë²ˆí˜¸\têµ­ì–´\tì˜ì–´\tìˆ˜í•™\tì´ì \tí‰ê· ");
 		
-		for(int i=0; i<score.length; i++) { //i¹øÂ° ÇĞ»ı		0~1
-			System.out.print((i+1) + "¹ø"); //¹øÈ£
+		for(int i=0; i<score.length; i++) { //ië²ˆì§¸ í•™ìƒ		0~1
+			System.out.print((i+1) + "ë²ˆ"); //ë²ˆí˜¸
 		
-			for(int j=0; j<score[i].length; j++) { //j¹øÂ° °ú¸ñ	0~2
-				System.out.print("\t" + score[i][j]); //±¹¿µ¼ö Á¡¼ö
+			for(int j=0; j<score[i].length; j++) { //jë²ˆì§¸ ê³¼ëª©	0~2
+				System.out.print("\t" + score[i][j]); //êµ­ì˜ìˆ˜ ì ìˆ˜
 				
 			}
 			
-			System.out.print("\t" + sum[i]); //ÃÑÁ¡
-			System.out.println("\t" + String.format("%.2f", avg[i])); //Æò±Õ
+			System.out.print("\t" + sum[i]); //ì´ì 
+			System.out.println("\t" + String.format("%.2f", avg[i])); //í‰ê· 
 		}
 
 		//-----------------

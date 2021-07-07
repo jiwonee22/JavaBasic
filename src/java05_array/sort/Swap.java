@@ -3,19 +3,19 @@ package java05_array.sort;
 public class Swap {
 	public static void main(String[] args) {
 		
-		//½º¿Ò, swap, ÀÚ¸® ¹Ù²Ù±â, ±³È¯ÇÏ±â
+		//ìŠ¤ì™‘, swap, ìë¦¬ ë°”ê¾¸ê¸°, êµí™˜í•˜ê¸°
 		
 		int num1 = 11;
 		int num2 = 22;
 		
-		System.out.println("[½º¿Ò Àü] " + num1 + ", " + num2);
+		System.out.println("[ìŠ¤ì™‘ ì „] " + num1 + ", " + num2);
 		
-		//½º¿ÒÄÚµå
-		int tmp = num1; //ÀÓ½Ãº¯¼ö¿¡ µ¥ÀÌÅÍ ¹é¾÷
-		num1 = num2; //µ¥ÀÌÅÍ ÀúÀå
-		num2 = tmp; //º¹¿ø
+		//ìŠ¤ì™‘ì½”ë“œ
+		int tmp = num1; //ì„ì‹œë³€ìˆ˜ì— ë°ì´í„° ë°±ì—…
+		num1 = num2; //ë°ì´í„° ì €ì¥
+		num2 = tmp; //ë³µì›
 		
 		
-		System.out.println("[½º¿Ò ÈÄ] " + num1 + ", " + num2);
+		System.out.println("[ìŠ¤ì™‘ í›„] " + num1 + ", " + num2);
 	}
 }

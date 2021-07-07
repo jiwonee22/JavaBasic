@@ -11,15 +11,15 @@ public class IfEx_03 {
 		int input = sc.nextInt();
 		
 		if ( input == 10 ) {
-			System.out.println("ÀÔ·ÂÇÑ °ªÀº 10ÀÌ´Ù");
+			System.out.println("ì…ë ¥í•œ ê°’ì€ 10ì´ë‹¤");
 		}
 		
 		if ( input != 10) {
-			System.out.println("ÀÔ·ÂÇÑ °ªÀº 10ÀÌ ¾Æ´Ï´Ù");
+			System.out.println("ì…ë ¥í•œ ê°’ì€ 10ì´ ì•„ë‹ˆë‹¤");
 		}
 		
 		if ( input>=1 && input <=100 ) {
-			System.out.println("ÀÔ·ÂÇÑ °ªÀº 1~100 »çÀÌÀÇ Á¤¼ö");
+			System.out.println("ì…ë ¥í•œ ê°’ì€ 1~100 ì‚¬ì´ì˜ ì •ìˆ˜");
 		}
 		
 	}

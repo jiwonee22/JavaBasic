@@ -5,31 +5,31 @@ import java.util.Scanner;
 public class ScannerEx_05 {
 	public static void main(String[] args) {
 		
-		//Scanner¸¦ ÀÌ¿ëÇÑ char ÀÔ·Â
-		//	Scanner¿¡´Â char¸¦ ÀÔ·Â¹Ş´Â ±â´ÉÀÌ ¾ø´Ù
+		//Scannerë¥¼ ì´ìš©í•œ char ì…ë ¥
+		//	Scannerì—ëŠ” charë¥¼ ì…ë ¥ë°›ëŠ” ê¸°ëŠ¥ì´ ì—†ë‹¤
 		
-		//	StringÀº charÇüÀ» ¿©·¯ °³ ¸ğ¾Æ³õÀº µ¥ÀÌÅÍÅ¸ÀÔÀÌ´Ù
-		//	StringÀ¸·Î ÀÔ·Â¹Ş°í, ±× Áß¿¡¼­ ÇÑ ±ÛÀÚ(char)¸¦ ¶¼¾î³½´Ù
+		//	Stringì€ charí˜•ì„ ì—¬ëŸ¬ ê°œ ëª¨ì•„ë†“ì€ ë°ì´í„°íƒ€ì…ì´ë‹¤
+		//	Stringìœ¼ë¡œ ì…ë ¥ë°›ê³ , ê·¸ ì¤‘ì—ì„œ í•œ ê¸€ì(char)ë¥¼ ë–¼ì–´ë‚¸ë‹¤
 		
 		//---------------------------------------------------------------		
 	
-		Scanner sc = new Scanner(System.in); //ÀÔ·Â °´Ã¼
+		Scanner sc = new Scanner(System.in); //ì…ë ¥ ê°ì²´
 		
-		System.out.print("¹®ÀÚ¿­ ÀÔ·Â : ");
-		String str = sc.nextLine(); //¹®ÀÚ¿­À» ÀÔ·Â¹Ş¾Æ strº¯¼ö¿¡ ÀúÀå
+		System.out.print("ë¬¸ìì—´ ì…ë ¥ : ");
+		String str = sc.nextLine(); //ë¬¸ìì—´ì„ ì…ë ¥ë°›ì•„ strë³€ìˆ˜ì— ì €ì¥
 		System.out.println("[TEST] str : " + str);
 		
-		//str¹®ÀÚ¿­ÀÇ 0¹øÂ° ¹®ÀÚ¸¦ alphaº¯¼ö¿¡ ÀúÀå
+		//strë¬¸ìì—´ì˜ 0ë²ˆì§¸ ë¬¸ìë¥¼ alphaë³€ìˆ˜ì— ì €ì¥
 		char alpha = str.charAt(0);
 		System.out.println("[TEST] alpha : " + alpha);
 		
 		//---------------------------------------------------------------		
 		System.out.println("----------------");
-		System.out.print("¼ºº° ÀÔ·Â : ");
+		System.out.print("ì„±ë³„ ì…ë ¥ : ");
 		String genderString = sc.nextLine();
 		char gender = genderString.charAt(0);
 		
-//		System.out.println("ÀÔ·ÂÇÑ ¼ºº° : " + gender);
+//		System.out.println("ì…ë ¥í•œ ì„±ë³„ : " + gender);
 		
 		//---------------------------------------------------------------		
 

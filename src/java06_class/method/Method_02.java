@@ -2,13 +2,13 @@ package java06_class.method;
 
 public class Method_02 {
 		
-		//¸Å°³º¯¼ö(parameter) - Àü´ŞÀÎÀÚ(argument)
+		//ë§¤ê°œë³€ìˆ˜(parameter) - ì „ë‹¬ì¸ì(argument)
 		
-		//¹İÈ¯µ¥ÀÌÅÍ(return)
+		//ë°˜í™˜ë°ì´í„°(return)
 	
 		//------------------------------------------------------------
 		
-		//¸Å°³º¯¼öX, ¹İÈ¯µ¥ÀÌÅÍX
+		//ë§¤ê°œë³€ìˆ˜X, ë°˜í™˜ë°ì´í„°X
 		
 		public void method1() {
 			System.out.println("Hello");
@@ -17,16 +17,16 @@ public class Method_02 {
 
 		//------------------------------------------------------------
 		
-		//¸Å°³º¯¼öO, ¹İÈ¯µ¥ÀÌÅÍX
+		//ë§¤ê°œë³€ìˆ˜O, ë°˜í™˜ë°ì´í„°X
 		
 		public void method2( int parameter ) {
-			System.out.println("Àü´ŞµÈ °ª : " + parameter);
+			System.out.println("ì „ë‹¬ëœ ê°’ : " + parameter);
 		}
 		
 		
 		//------------------------------------------------------------
 		
-		//¸Å°³º¯¼öX, ¹İÈ¯µ¥ÀÌÅÍO
+		//ë§¤ê°œë³€ìˆ˜X, ë°˜í™˜ë°ì´í„°O
 		
 		public int returnNum() {
 			
@@ -36,7 +36,7 @@ public class Method_02 {
 		
 		//------------------------------------------------------------
 		
-		//¸Å°³º¯¼öO, ¹İÈ¯µ¥ÀÌÅÍO
+		//ë§¤ê°œë³€ìˆ˜O, ë°˜í™˜ë°ì´í„°O
 		
 		public int plus(int n1, int n2) {
 			return n1 + n2;

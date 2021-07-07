@@ -10,8 +10,8 @@ public class quiz2D_05 {
 		for(int l=0; l<9; l++) {
 			if(l%4 == 0) {
 				
-				for (int i = 0; i < arr.length-1; i++) { //iÇà, 0~4
-					for (int j = 0; j < arr[i].length-1; j++) { //j¿­, 0~4
+				for (int i = 0; i < arr.length-1; i++) { //ií–‰, 0~4
+					for (int j = 0; j < arr[i].length-1; j++) { //jì—´, 0~4
 
 						arr[i][j] = k++;
 
@@ -21,8 +21,8 @@ public class quiz2D_05 {
 			
 		}
 		
-		for (int i = 0; i < arr.length; i++) { //iÇà
-			for (int j = 0; j < arr[i].length; j++) { //j¿­
+		for (int i = 0; i < arr.length; i++) { //ií–‰
+			for (int j = 0; j < arr[i].length; j++) { //jì—´
 				System.out.print(arr[i][j] + "\t");
 			}
 			System.out.println();

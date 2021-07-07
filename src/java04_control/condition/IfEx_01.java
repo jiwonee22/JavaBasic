@@ -3,25 +3,25 @@ package java04_control.condition;
 public class IfEx_01 {
 	public static void main(String[] args) {
 
-		//Á¶°Ç¹® - if
+		//ì¡°ê±´ë¬¸ - if
 		
-//		if( Á¶°Ç½Ä ) {
-//			//Á¶°Ç½ÄÀÌ Âü(true)ÀÏ ¶§ ÄÚµå¸¦ ½ÇÇàÇÏ´Â ¿µ¿ª
+//		if( ì¡°ê±´ì‹ ) {
+//			//ì¡°ê±´ì‹ì´ ì°¸(true)ì¼ ë•Œ ì½”ë“œë¥¼ ì‹¤í–‰í•˜ëŠ” ì˜ì—­
 //		}
 		
-		//** Á¶°Ç½Ä : true/false °á°ú·Î ³ª¿À´Â ¿¬»ê½Ä
+		//** ì¡°ê±´ì‹ : true/false ê²°ê³¼ë¡œ ë‚˜ì˜¤ëŠ” ì—°ì‚°ì‹
 
 		//-----------------------------------------------------------------
 		
 		if ( true ) {
-			System.out.println("Ãâ·ÂµÉ±î???");
+			System.out.println("ì¶œë ¥ë ê¹Œ???");
 		}
 
 		if ( false ) {
-			System.out.println("¿©±â´Â???");
+			System.out.println("ì—¬ê¸°ëŠ”???");
 		}
 		
-		System.out.println("¿©±â´Â if¹®µéÀÇ ¹Ù±ùÂÊ ÄÚµåÀÔ´Ï´Ù");
+		System.out.println("ì—¬ê¸°ëŠ” ifë¬¸ë“¤ì˜ ë°”ê¹¥ìª½ ì½”ë“œì…ë‹ˆë‹¤");
 		
 	}
 }

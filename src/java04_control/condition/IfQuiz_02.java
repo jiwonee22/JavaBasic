@@ -11,14 +11,14 @@ public class IfQuiz_02 {
 		int input = sc.nextInt();
 
 		if ( input % 3 == 0 && input != 0 ) {
-			System.out.println("3ÀÇ ¹è¼öÀÔ´Ï´Ù");
+			System.out.println("3ì˜ ë°°ìˆ˜ì…ë‹ˆë‹¤");
 		} else {
-			System.out.println("3ÀÇ ¹è¼ö°¡ ¾Æ´Õ´Ï´Ù");
+			System.out.println("3ì˜ ë°°ìˆ˜ê°€ ì•„ë‹™ë‹ˆë‹¤");
 		}
 
-// 		ÀÌ·¸°Ô ÀÛ¼ºÇØµµ µÊ
+// 		ì´ë ‡ê²Œ ì‘ì„±í•´ë„ ë¨
 //		if ( !(input % 3 == 0 && input != 0) ) {
-//			System.out.println("3ÀÇ ¹è¼ö°¡ ¾Æ´Õ´Ï´Ù");
+//			System.out.println("3ì˜ ë°°ìˆ˜ê°€ ì•„ë‹™ë‹ˆë‹¤");
 //		}
 
 	}

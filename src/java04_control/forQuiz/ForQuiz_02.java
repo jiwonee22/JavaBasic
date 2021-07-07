@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class ForQuiz_02 {
 
-	//	- ¾î¶² ¼öÀÇ ¾à¼ö¸¦ ±¸ÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ¿©¶ó
-	//	¾à¼ö = ¾î¶² ¼ö¸¦ Á¤¼ö·Î ³ª´­ ¼ö ÀÖ´Â ¼ö
+	//	- ì–´ë–¤ ìˆ˜ì˜ ì•½ìˆ˜ë¥¼ êµ¬í•˜ëŠ” í”„ë¡œê·¸ë¨ì„ ì‘ì„±í•˜ì—¬ë¼
+	//	ì•½ìˆ˜ = ì–´ë–¤ ìˆ˜ë¥¼ ì •ìˆ˜ë¡œ ë‚˜ëˆŒ ìˆ˜ ìˆëŠ” ìˆ˜
 
 	public static void main(String[] args) {
 
@@ -26,14 +26,14 @@ public class ForQuiz_02 {
 		
 		for(i=1; i<=input; i++) { //i, 1~input
 			
-			boolean flag = false; //ÇÃ·¡±×
+			boolean flag = false; //í”Œë˜ê·¸
 			
-			if(input%i == 0) {//¾à¼ö ¹ß°ß
+			if(input%i == 0) {//ì•½ìˆ˜ ë°œê²¬
 				flag = true;
 				
 			}
 			
-			if (flag) {//i°¡ ¾à¼ö(true)¶ó¸é Ãâ·Â
+			if (flag) {//iê°€ ì•½ìˆ˜(true)ë¼ë©´ ì¶œë ¥
 				System.out.print(i + " ");
 			}
 		}

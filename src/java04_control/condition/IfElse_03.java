@@ -6,35 +6,35 @@ public class IfElse_03 {
 		int num = 88;
 
 		if( num>0 && num<=100 ) {
-			System.out.println("1~100»çÀÌÀÇ Á¤¼ö");
+			System.out.println("1~100ì‚¬ì´ì˜ ì •ìˆ˜");
 		}
 
 		System.out.println("-----------");
 
-		//µé¿©¾²±â ÀÚµ¿ Á¤·Ä ´ÜÃàÅ° : ctrl + i
-		//	-> Á¤·ÄÇÒ ÄÚµåµéº¸´Ù À§, ¾Æ·¡·Î ¸î ÁÙ ´õ ¼±ÅÃÇØ¼­ »ç¿ëÇÑ´Ù.
+		//ë“¤ì—¬ì“°ê¸° ìë™ ì •ë ¬ ë‹¨ì¶•í‚¤ : ctrl + i
+		//	-> ì •ë ¬í•  ì½”ë“œë“¤ë³´ë‹¤ ìœ„, ì•„ë˜ë¡œ ëª‡ ì¤„ ë” ì„ íƒí•´ì„œ ì‚¬ìš©í•œë‹¤.
 
-		// ÀüÃ¼ÄÚµå ¼±ÅÃ : ctrl + a
-		// µé¿©¾²±â Á¤·Ä : ctrl + i
+		// ì „ì²´ì½”ë“œ ì„ íƒ : ctrl + a
+		// ë“¤ì—¬ì“°ê¸° ì •ë ¬ : ctrl + i
 
 		if ( num>0 ) {
-			System.out.println("0º¸´Ù Å©´Ù");
+			System.out.println("0ë³´ë‹¤ í¬ë‹¤");
 
 			if ( num<=100 ) {
-				System.out.println("0º¸´Ù Å©´Ù");
-				System.out.println("100º¸´Ù ÀÛ°Å³ª °°´Ù");
+				System.out.println("0ë³´ë‹¤ í¬ë‹¤");
+				System.out.println("100ë³´ë‹¤ ì‘ê±°ë‚˜ ê°™ë‹¤");
 			} // if ( num<=100 ) end
 
-			System.out.println("0º¸´Ù Å©´Ù");
+			System.out.println("0ë³´ë‹¤ í¬ë‹¤");
 			
 		} else {
-			System.out.println("0º¸´Ù Å©Áö ¾Ê´Ù");
+			System.out.println("0ë³´ë‹¤ í¬ì§€ ì•Šë‹¤");
 
 			if ( num==0 ) {
-				System.out.println("0°ú °°´Ù");
+				System.out.println("0ê³¼ ê°™ë‹¤");
 			} else {
-				System.out.println("0°ú °°Áö ¾Ê´Ù");
-				System.out.println("0º¸´Ù ÀÛ´Ù");
+				System.out.println("0ê³¼ ê°™ì§€ ì•Šë‹¤");
+				System.out.println("0ë³´ë‹¤ ì‘ë‹¤");
 			}
 		}
 

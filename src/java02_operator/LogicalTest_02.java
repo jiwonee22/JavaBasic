@@ -9,7 +9,7 @@ public class LogicalTest_02 {
 		
 		res1 = a<b || --a>c++;
 		
-		//ÁÂº¯ÀÌ trueÀÏ¶§, ¿ìº¯Àº °è»êÇÏÁö ¾ÊÀ½.
+		//ì¢Œë³€ì´ trueì¼ë•Œ, ìš°ë³€ì€ ê³„ì‚°í•˜ì§€ ì•ŠìŒ.
 		
 		System.out.println("a="+a+",b="+b+",c="+c);
 
@@ -19,12 +19,13 @@ public class LogicalTest_02 {
 		
 		System.out.println("a="+a+",b="+b+",c="+c);
 		
-		//³í¸®¿¬»êÀÚÀÇ ´ÜÃà¿¬»ê(Shortcut)
-		//	AND¿¬»êÀº ¿ÞÂÊÀÇ ÇÇ¿¬»êÀÚ°¡ false¶ó¸é ¿À¸¥ÂÊÇ×ÀÇ ¿¬»êÀ» ÇÏÁö ¾Ê´Â´Ù
-		// 	OR¿¬»êÀº ¿ÞÂÊÀÇ ÇÇ¿¬»êÀÚ°¡ true¶ó¸é ¿À¸¥ÂÊÇ×ÀÇ ¿¬»êÀ» ÇÏÁö ¾Ê´Â´Ù
+		//ë…¼ë¦¬ì—°ì‚°ìžì˜ ë‹¨ì¶•ì—°ì‚°(Shortcut)
+		//	ANDì—°ì‚°ì€ ì™¼ìª½ì˜ í”¼ì—°ì‚°ìžê°€ falseë¼ë©´ ì˜¤ë¥¸ìª½í•­ì˜ ì—°ì‚°ì„ í•˜ì§€ ì•ŠëŠ”ë‹¤
+		// 	ORì—°ì‚°ì€ ì™¼ìª½ì˜ í”¼ì—°ì‚°ìžê°€ trueë¼ë©´ ì˜¤ë¥¸ìª½í•­ì˜ ì—°ì‚°ì„ í•˜ì§€ ì•ŠëŠ”ë‹¤
 
 	}
 }
+
 
 
 

@@ -3,11 +3,11 @@ package java04_control.selection;
 public class Switch_03 {
 	public static void main(String[] args) {
 
-		//switchÀÇ ºñ±³´ë»óÀº Á¤¼öÇü¸¸ »ç¿ë °¡´ÉÇÏ´Ù
+		//switchì˜ ë¹„êµëŒ€ìƒì€ ì •ìˆ˜í˜•ë§Œ ì‚¬ìš© ê°€ëŠ¥í•˜ë‹¤
 		
 		//--------------------------------------------------------
 		
-		//³í¸®Çü(boolean) µ¥ÀÌÅÍ »ç¿ë ºÒ°¡
+		//ë…¼ë¦¬í˜•(boolean) ë°ì´í„° ì‚¬ìš© ë¶ˆê°€
 		boolean b = true;
 		
 //		switch ( b ) {
@@ -15,7 +15,7 @@ public class Switch_03 {
 		
 		//--------------------------------------------------------
 	
-		//½Ç¼öÇü µ¥ÀÌÅÍ »ç¿ë ºÒ°¡
+		//ì‹¤ìˆ˜í˜• ë°ì´í„° ì‚¬ìš© ë¶ˆê°€
 		double d = 3.14;
 		
 //		switch ( d ) {
@@ -23,24 +23,24 @@ public class Switch_03 {
 		
 		//--------------------------------------------------------
 		
-		//switch¿¡¼­ charÇü »ç¿ëÇÏ±â
-		char alpha = 'B'; //Á¤¼ö·Î Ã³¸®µÈ´Ù
+		//switchì—ì„œ charí˜• ì‚¬ìš©í•˜ê¸°
+		char alpha = 'B'; //ì •ìˆ˜ë¡œ ì²˜ë¦¬ëœë‹¤
 		
 		switch ( alpha ) {
 		case 'A':
-			System.out.println("A¿¹¿ä");
+			System.out.println("Aì˜ˆìš”");
 			break;
 		
 		case 'B':
-			System.out.println("BÀÔ´Ï´Ù");
+			System.out.println("Bì…ë‹ˆë‹¤");
 			break;
 		
 		case 'C':
-			System.out.println("C¿ä");
+			System.out.println("Cìš”");
 			break;
 		
 		default:
-			System.out.println("A, B, C ´Ù ¾Æ´Ô");
+			System.out.println("A, B, C ë‹¤ ì•„ë‹˜");
 		}
 	}
 

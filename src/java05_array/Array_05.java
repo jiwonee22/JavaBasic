@@ -3,28 +3,28 @@ package java05_array;
 public class Array_05 {
 	public static void main(String[] args) {
 		
-		//¹®ÀÚ¿­
+		//ë¬¸ìì—´
 		String str = "Apple";
 		
 		//-----------------------------------------------------
 		
-		String [] strArr; //¹®ÀÚ¿­ ¹è¿­ ¼±¾ğ
-		strArr = new String[3]; //¹è¿­ »ı¼º
+		String [] strArr; //ë¬¸ìì—´ ë°°ì—´ ì„ ì–¸
+		strArr = new String[3]; //ë°°ì—´ ìƒì„±
 		
-		//¹è¿­¿¡ °ª ´ëÀÔ
+		//ë°°ì—´ì— ê°’ ëŒ€ì…
 		strArr[0] = "Apple";
 		strArr[1] = "Banana";
 		strArr[2] = "Cherry";
 		
-		//¹®ÀÚ¿­ÀÇ °³¼ö
-		System.out.println("¹è¿­ÀÇ ±æÀÌ : " + strArr.length);
+		//ë¬¸ìì—´ì˜ ê°œìˆ˜
+		System.out.println("ë°°ì—´ì˜ ê¸¸ì´ : " + strArr.length);
 		System.out.println("-----------------------");
 		
 		
 		for(int i=0; i<strArr.length; i++) {
 			System.out.println(strArr[i]);
 	
-			System.out.println("¹è¿­ÀÇ ±æÀÌ : " + strArr[i].length());
+			System.out.println("ë°°ì—´ì˜ ê¸¸ì´ : " + strArr[i].length());
 	
 			System.out.println("-----------------------");
 			

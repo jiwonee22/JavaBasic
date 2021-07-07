@@ -8,7 +8,7 @@ public class quiz2D_01 {
 		int k = 1;
 
 
-		//ÀÔ·Â (¿©±â °íÃÄ¼­ ÇØ°áÇÒ °Í!)
+		//ì…ë ¥ (ì—¬ê¸° ê³ ì³ì„œ í•´ê²°í•  ê²ƒ!)
 		for (int i = 0; i < arr.length; i++) {
 			for (int j = 0; j < arr[i].length; j++) {
 
@@ -18,9 +18,9 @@ public class quiz2D_01 {
 		}
 
 
-		//Ãâ·Â (±×´ë·Î µÑ °Í!)
-		for (int i = 0; i < arr.length; i++) { //iÇà
-			for (int j = 0; j < arr[i].length; j++) { //j¿­
+		//ì¶œë ¥ (ê·¸ëŒ€ë¡œ ë‘˜ ê²ƒ!)
+		for (int i = 0; i < arr.length; i++) { //ií–‰
+			for (int j = 0; j < arr[i].length; j++) { //jì—´
 				System.out.print(arr[i][j] + "\t");
 			}
 			System.out.println();

@@ -7,24 +7,24 @@ public class Array2D_05 {
 		arr[0] = 10;
 		arr[1] = 20;
 		
-		System.out.println("±æÀÌ : " + arr.length);
+		System.out.println("ê¸¸ì´ : " + arr.length);
 		
 		System.out.println("----------------------");
 		
 		arr = new int[3];
-		System.out.println("±æÀÌ : " + arr.length);
+		System.out.println("ê¸¸ì´ : " + arr.length);
 
 		//-------------------------------------------------------
 		
 		//GC, Garbage Collector
-		//	-> °¡ºñÁö ÄÝ·ºÅÍ
+		//	-> ê°€ë¹„ì§€ ì½œë ‰í„°
 		
-		//	µ¿ÀûÇÒ´ç ¸Þ¸ð¸®¿µ¿ª(Èü ¿µ¿ª)À» °ü¸®ÇÑ´Ù
+		//	ë™ì í• ë‹¹ ë©”ëª¨ë¦¬ì˜ì—­(íž™ ì˜ì—­)ì„ ê´€ë¦¬í•œë‹¤
 
-		//	¾Æ¹«µµ ÂüÁ¶ÇÏ°í ÀÖÁö ¾ÊÀº
-		//	µ¿ÀûÇÒ´ç ¸Þ¸ð¸®°ø°£À» ÇØÁ¦ÇÑ´Ù
+		//	ì•„ë¬´ë„ ì°¸ì¡°í•˜ê³  ìžˆì§€ ì•Šì€
+		//	ë™ì í• ë‹¹ ë©”ëª¨ë¦¬ê³µê°„ì„ í•´ì œí•œë‹¤
 		
-		//	JVM¾È¿¡ Æ÷ÇÔµÇ¾îÀÖ´Ù
+		//	JVMì•ˆì— í¬í•¨ë˜ì–´ìžˆë‹¤
 		
 		
 	}

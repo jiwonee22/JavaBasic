@@ -3,16 +3,16 @@ package java04_control.loop;
 public class For_10_2_long {
 	public static void main(String[] args) {
 
-		for(int i=1; i<=9; i++) {//iº¯¼ö, 1~9, 9¹ø
+		for(int i=1; i<=9; i++) {//ië³€ìˆ˜, 1~9, 9ë²ˆ
 
 
-			for(int dan=2; dan<=9; dan++) {//danº¯¼ö, 2~9, 8¹ø
+			for(int dan=2; dan<=9; dan++) {//danë³€ìˆ˜, 2~9, 8ë²ˆ
 
 				System.out.print(dan + " x " + i + " = " + (dan*i) + "\t");
 
 			}
 
-			System.out.println(); //°¢ ´Ü Ãâ·ÂÇÑ ÈÄ ÁÙ¹Ù²Þ
+			System.out.println(); //ê° ë‹¨ ì¶œë ¥í•œ í›„ ì¤„ë°”ê¿ˆ
 		}
 
 	}

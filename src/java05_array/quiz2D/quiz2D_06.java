@@ -7,10 +7,10 @@ public class quiz2D_06 {
 
 		int k = 1;
 
-		for (int i = 0; i < arr.length; i++) { //iÇà, 0~4
+		for (int i = 0; i < arr.length; i++) { //ií–‰, 0~4
 			if( i%2 == 0) {
 
-				for (int j = 0; j < arr[i].length; j++) { //j¿­, 0~4
+				for (int j = 0; j < arr[i].length; j++) { //jì—´, 0~4
 
 					arr[i][j] = k++;
 				}
@@ -24,9 +24,9 @@ public class quiz2D_06 {
 
 		}
 
-			//Ãâ·Â (±×´ë·Î µÑ °Í!)
-			for (int i = 0; i < arr.length; i++) { //iÇà
-				for (int j = 0; j < arr[i].length; j++) { //j¿­
+			//ì¶œë ¥ (ê·¸ëŒ€ë¡œ ë‘˜ ê²ƒ!)
+			for (int i = 0; i < arr.length; i++) { //ií–‰
+				for (int j = 0; j < arr[i].length; j++) { //jì—´
 					System.out.print(arr[i][j] + "\t");
 				}
 				System.out.println();

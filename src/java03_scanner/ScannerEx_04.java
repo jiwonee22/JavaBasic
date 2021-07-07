@@ -5,31 +5,31 @@ import java.util.Scanner;
 public class ScannerEx_04 {
 	public static void main(String[] args) {
 		
-		//**Scanner°´Ã¼¸¦ »ç¿ëÇÒ ¶§¿¡´Â ÀÔ·Â ¹öÆÛ ¹®Á¦¸¦ Á¶½ÉÇØ¾ßÇÑ´Ù
+		//**Scannerê°ì²´ë¥¼ ì‚¬ìš©í•  ë•Œì—ëŠ” ì…ë ¥ ë²„í¼ ë¬¸ì œë¥¼ ì¡°ì‹¬í•´ì•¼í•œë‹¤
 		
-		//	nextLine() À» »ç¿ëÇÏ±â Á÷Àü¿¡ nextLine() ÀÌ ¾Æ´Ñ
-		//	´Ù¸¥ next~~() ±â´ÉÀ» »ç¿ëÇß´Ù¸é ±× Áß°£¿¡ nextLine()À» 
-		//	ÇÑ¹ø ´õ »ç¿ëÇØÁÖ¾î¾ß ÇÑ´Ù
+		//	nextLine() ì„ ì‚¬ìš©í•˜ê¸° ì§ì „ì— nextLine() ì´ ì•„ë‹Œ
+		//	ë‹¤ë¥¸ next~~() ê¸°ëŠ¥ì„ ì‚¬ìš©í–ˆë‹¤ë©´ ê·¸ ì¤‘ê°„ì— nextLine()ì„ 
+		//	í•œë²ˆ ë” ì‚¬ìš©í•´ì£¼ì–´ì•¼ í•œë‹¤
 		
-		//	-> ÀÔ·Â¹öÆÛ¿¡ ³²¾ÆÀÖ´Â '\n'°³Çà¹®ÀÚ¸¦ ¾ø¾Ö´Â ¿ªÇÒÀ» ÇÑ´Ù
+		//	-> ì…ë ¥ë²„í¼ì— ë‚¨ì•„ìˆëŠ” '\n'ê°œí–‰ë¬¸ìë¥¼ ì—†ì• ëŠ” ì—­í• ì„ í•œë‹¤
 		
 		//--------------------------------------------------------------------
 		
-		Scanner sc = new Scanner(System.in); //ÀÔ·Â °´Ã¼
+		Scanner sc = new Scanner(System.in); //ì…ë ¥ ê°ì²´
 		
-		System.out.println("---ÀÔ·Â---");
+		System.out.println("---ì…ë ¥---");
 		System.out.print("Input Number : ");
-		int num = sc.nextInt(); //Á¤¼ö°ª ÀÔ·Â¹Ş±â
+		int num = sc.nextInt(); //ì •ìˆ˜ê°’ ì…ë ¥ë°›ê¸°
 		
-		sc.nextLine(); //¹öÆÛ ºñ¿ì±â ('\n' Á¦°Å)
-//		sc.skip("[\\r\\n]+"); //¹öÆÛ¿¡ ³²Àº '\r' '\n' À» Á¦°ÅÇÏ´Â ±â´É
+		sc.nextLine(); //ë²„í¼ ë¹„ìš°ê¸° ('\n' ì œê±°)
+//		sc.skip("[\\r\\n]+"); //ë²„í¼ì— ë‚¨ì€ '\r' '\n' ì„ ì œê±°í•˜ëŠ” ê¸°ëŠ¥
 		
 		System.out.print("Input String : ");
-		String str = sc.nextLine(); //¹®ÀÚ¿­ ÀÔ·Â¹Ş±â
+		String str = sc.nextLine(); //ë¬¸ìì—´ ì…ë ¥ë°›ê¸°
 		
-		System.out.println("---Ãâ·Â---");
-		System.out.println("¼ıÀÚ : " + num);
-		System.out.println("¹®ÀÚ¿­ : " + str);
+		System.out.println("---ì¶œë ¥---");
+		System.out.println("ìˆ«ì : " + num);
+		System.out.println("ë¬¸ìì—´ : " + str);
 		
 		
 	}

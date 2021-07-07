@@ -3,19 +3,19 @@ package java04_control.loop;
 public class While_02 {
 	public static void main(String[] args) {
 		
-//		ÃÊ±â½Ä; //while±¸¹®ÀÌ ½ÃÀÛµÇ±â Àü¿¡ ÀÛ¼ºÇÑ´Ù
+//		ì´ˆê¸°ì‹; //whileêµ¬ë¬¸ì´ ì‹œìž‘ë˜ê¸° ì „ì— ìž‘ì„±í•œë‹¤
 //		
-//		while(Á¶°Ç½Ä) {
+//		while(ì¡°ê±´ì‹) {
 //			
-//			Á¶°Ç½ÄÀÌ ÂüÀÌ¸é ¹Ýº¹¼öÇàÇÒ ÄÚµå
+//			ì¡°ê±´ì‹ì´ ì°¸ì´ë©´ ë°˜ë³µìˆ˜í–‰í•  ì½”ë“œ
 //			
 //			
-//			Áõ°¨½Ä;	//while¹® ¾ÈÂÊ¿¡¼­ Á¦ÀÏ ¸¶Áö¸·ÄÚµå·Î ÀÛ¼ºÇÑ´Ù
+//			ì¦ê°ì‹;	//whileë¬¸ ì•ˆìª½ì—ì„œ ì œì¼ ë§ˆì§€ë§‰ì½”ë“œë¡œ ìž‘ì„±í•œë‹¤
 //		}
 		
 		//----------------------------------------------------------
 		
-		//for¹®Àº È½¼ö°¡ Á¤ÇØÁ®ÀÖ°Å³ª, Á¤¼ö°ª ¹Ýº¹ÀÏ ¶§ ÁÖ·Î »ç¿ë
+		//forë¬¸ì€ íšŸìˆ˜ê°€ ì •í•´ì ¸ìžˆê±°ë‚˜, ì •ìˆ˜ê°’ ë°˜ë³µì¼ ë•Œ ì£¼ë¡œ ì‚¬ìš©
 		
 		for(int i=0; i<10; i++) { //i, 0~9, x10
 			System.out.println(i);
@@ -23,15 +23,15 @@ public class While_02 {
 	
 		System.out.println("-----");
 		
-		//while¹®Àº È½¼ö°¡ Á¤È®È÷ Á¤ÇØÁ®ÀÖÁö ¾Ê°í, 
-		//Á¾·á Á¶°ÇÀº Á¸ÀçÇÒ ¶§ ÁÖ·Î »ç¿ë
+		//whileë¬¸ì€ íšŸìˆ˜ê°€ ì •í™•ížˆ ì •í•´ì ¸ìžˆì§€ ì•Šê³ , 
+		//ì¢…ë£Œ ì¡°ê±´ì€ ì¡´ìž¬í•  ë•Œ ì£¼ë¡œ ì‚¬ìš©
 
-		int i=0; //ÃÊ±â½Ä, while¹® ÀÌÀü¿¡ ÀÛ¼º
+		int i=0; //ì´ˆê¸°ì‹, whileë¬¸ ì´ì „ì— ìž‘ì„±
 		
-		while(i<10) { //Á¶°Ç½Ä
-			System.out.println(i); //¹Ýº¹ ¼öÇà ÄÚµå
+		while(i<10) { //ì¡°ê±´ì‹
+			System.out.println(i); //ë°˜ë³µ ìˆ˜í–‰ ì½”ë“œ
 			
-			i++; //Áõ°¨½Ä, while¹® ¾ÈÂÊ Á¦ÀÏ ¸¶Áö¸·
+			i++; //ì¦ê°ì‹, whileë¬¸ ì•ˆìª½ ì œì¼ ë§ˆì§€ë§‰
 		}
 			
 	}

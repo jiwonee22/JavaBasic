@@ -3,9 +3,9 @@ package java04_control.condition;
 import java.util.Scanner;
 
 public class IfQuiz_01 {
-	//	+ ¼ıÀÚ ÇÏ³ª¸¦ ÀÔ·Â¹Ş¾Æ ¾ç¼öÀÎÁö À½¼öÀÎÁö ÆÇº°ÇÏ½Ã¿À
+	//	+ ìˆ«ì í•˜ë‚˜ë¥¼ ì…ë ¥ë°›ì•„ ì–‘ìˆ˜ì¸ì§€ ìŒìˆ˜ì¸ì§€ íŒë³„í•˜ì‹œì˜¤
 	//		>> Input Number : -3
-	//		>> À½¼öÀÔ´Ï´Ù
+	//		>> ìŒìˆ˜ì…ë‹ˆë‹¤
 	public static void main(String[] args) {
 
 
@@ -15,15 +15,15 @@ public class IfQuiz_01 {
 		int input = sc.nextInt();
 
 		if ( input < 0 ) {
-			System.out.println( "\t>> À½¼öÀÔ´Ï´Ù");
+			System.out.println( "\t>> ìŒìˆ˜ì…ë‹ˆë‹¤");
 		}
 		
 		if ( input > 0) {
-			System.out.println( "\t>> ¾ç¼öÀÔ´Ï´Ù");
+			System.out.println( "\t>> ì–‘ìˆ˜ì…ë‹ˆë‹¤");
 		} 
 		
 		if ( input == 0 ) {
-			System.out.println( "\t>> 0ÀÔ´Ï´Ù");
+			System.out.println( "\t>> 0ì…ë‹ˆë‹¤");
 		}
 		
 	}

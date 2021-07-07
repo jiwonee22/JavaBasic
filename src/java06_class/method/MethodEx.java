@@ -3,17 +3,17 @@ package java06_class.method;
 public class MethodEx {
 	public static void main(String[] args) {
 		
-		Method_01 m01 = new Method_01(); //°´Ã¼ »ı¼º
+		Method_01 m01 = new Method_01(); //ê°ì²´ ìƒì„±
 		
-		//¸Ş¼ÒµåÈ£ÃâÀÇ return°ªÀ» result º¯¼ö¿¡ ´ëÀÔÇÑ´Ù
-		int result = m01.add( 11 , 22 ); //¸Ş¼Òµå È£Ãâ
+		//ë©”ì†Œë“œí˜¸ì¶œì˜ returnê°’ì„ result ë³€ìˆ˜ì— ëŒ€ì…í•œë‹¤
+		int result = m01.add( 11 , 22 ); //ë©”ì†Œë“œ í˜¸ì¶œ
 		
-		System.out.println("µ¡¼ÀÀÇ °á°ú : " + result);
+		System.out.println("ë§ì…ˆì˜ ê²°ê³¼ : " + result);
 		
 		//-----------------------------------------------
 		
-		//¸Ş¼Òµå È£ÃâÀÇ return°ªÀ» °ğ¹Ù·Î Ãâ·Â¿¡ »ç¿ëÇÏ±â
-		System.out.println("µ¡¼ÀÀÇ °á°ú : " + m01.add( 111, 222 ));
+		//ë©”ì†Œë“œ í˜¸ì¶œì˜ returnê°’ì„ ê³§ë°”ë¡œ ì¶œë ¥ì— ì‚¬ìš©í•˜ê¸°
+		System.out.println("ë§ì…ˆì˜ ê²°ê³¼ : " + m01.add( 111, 222 ));
 		
 		
 		System.out.println("--- Method_02 -----------------");
@@ -24,8 +24,8 @@ public class MethodEx {
 		
 		m02.method2( 111 );
 		
-		System.out.println("¹İÈ¯µÈ °ª : " + m02.returnNum());
+		System.out.println("ë°˜í™˜ëœ ê°’ : " + m02.returnNum());
 		
-		System.out.println("µ¡¼À °á°ú : " + m02.plus(100, 200));
+		System.out.println("ë§ì…ˆ ê²°ê³¼ : " + m02.plus(100, 200));
 	}
 }

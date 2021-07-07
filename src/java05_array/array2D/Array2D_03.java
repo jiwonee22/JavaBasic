@@ -3,27 +3,27 @@ package java05_array.array2D;
 public class Array2D_03 {
 	public static void main(String[] args) {
 		
-		int[][] arr; //intÇü 2Â÷¿ø ¹è¿­ º¯¼ö ¼±¾ğ
+		int[][] arr; //intí˜• 2ì°¨ì› ë°°ì—´ ë³€ìˆ˜ ì„ ì–¸
 		
-		arr = new int[3][]; //¹è¿­ »ı¼º -> int[] Çü ¹è¿­
+		arr = new int[3][]; //ë°°ì—´ ìƒì„± -> int[] í˜• ë°°ì—´
 		
-		arr[0] = new int[4]; //¹è¿­ »ı¼º -> intÇü ¹è¿­
+		arr[0] = new int[4]; //ë°°ì—´ ìƒì„± -> intí˜• ë°°ì—´
 		arr[1] = new int[2];
 		arr[2] = new int[6];
 		
 		//-----------------------------------------
 		
-		System.out.println( arr.length ); //ÇàÀÇ ±æÀÌ
+		System.out.println( arr.length ); //í–‰ì˜ ê¸¸ì´
 		System.out.println("---------");
 		
-		System.out.println( arr[0].length); //0ÇàÀÇ ¿­ ±æÀÌ
-		System.out.println( arr[1].length); //1ÇàÀÇ ¿­ ±æÀÌ
-		System.out.println( arr[2].length); //2ÇàÀÇ ¿­ ±æÀÌ
+		System.out.println( arr[0].length); //0í–‰ì˜ ì—´ ê¸¸ì´
+		System.out.println( arr[1].length); //1í–‰ì˜ ì—´ ê¸¸ì´
+		System.out.println( arr[2].length); //2í–‰ì˜ ì—´ ê¸¸ì´
 		
 		System.out.println("---------");
 		
-		for(int i=0; i<arr.length; i++) { //iÇà
-			for(int j=0; j<arr[i].length; j++) { //j¿­
+		for(int i=0; i<arr.length; i++) { //ií–‰
+			for(int j=0; j<arr[i].length; j++) { //jì—´
 				System.out.print(arr[i][j] + " ");
 			}
 			System.out.println();

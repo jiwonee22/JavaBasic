@@ -3,16 +3,16 @@ package java04_control.selection;
 public class Switch_01 {
 	public static void main(String[] args) {
 
-		//switch¹®, ¼±ÅÃ¹®
-		//	-> switch-case¹®
+		//switchë¬¸, ì„ íƒë¬¸
+		//	-> switch-caseë¬¸
 
-		//		switch( ºñ±³´ë»ó ) {
+		//		switch( ë¹„êµëŒ€ìƒ ) {
 		//		
-		//		case °ª1 :
+		//		case ê°’1 :
 		//		
-		//		case °ª2 :
+		//		case ê°’2 :
 		//			
-		//		case °ª3 :
+		//		case ê°’3 :
 		//			
 		//			...
 		//			
@@ -20,12 +20,12 @@ public class Switch_01 {
 
 
 
-		//	ºñ±³´ë»óÀÇ °ª(º¯¼ö)°ú case¿¡ ÁöÁ¤ÇÑ °ªÀÌ °°À¸¸é
-		//	ÇØ´ç case±¸¹®ÀÇÀ§Ä¡ºÎÅÍ ÄÚµå°¡ ½ÇÇàµÈ´Ù
+		//	ë¹„êµëŒ€ìƒì˜ ê°’(ë³€ìˆ˜)ê³¼ caseì— ì§€ì •í•œ ê°’ì´ ê°™ìœ¼ë©´
+		//	í•´ë‹¹ caseêµ¬ë¬¸ì˜ìœ„ì¹˜ë¶€í„° ì½”ë“œê°€ ì‹¤í–‰ëœë‹¤
 
-		//	case¿¡ ÁöÁ¤µÈ °ª Áß¿¡¼­ °°Àº °ªÀÌ ¾øÀ¸¸é
-		//	default: ºÎÅÍ ½ÇÇàÇÑ´Ù
-		//	default: ´Â »ı·« °¡´É
+		//	caseì— ì§€ì •ëœ ê°’ ì¤‘ì—ì„œ ê°™ì€ ê°’ì´ ì—†ìœ¼ë©´
+		//	default: ë¶€í„° ì‹¤í–‰í•œë‹¤
+		//	default: ëŠ” ìƒëµ ê°€ëŠ¥
 
 
 		//--------------------------------------------------------
@@ -34,24 +34,25 @@ public class Switch_01 {
 
 		switch( num ) {
 		case 10:
-			System.out.println("numÀº 10ÀÔ´Ï´Ù");
+			System.out.println("numì€ 10ì…ë‹ˆë‹¤");
 			break;
 			
 		case 20:
-			System.out.println("numÀº 20ÀÔ´Ï´Ù");
+			System.out.println("numì€ 20ì…ë‹ˆë‹¤");
 			break;
 			
 		case 30:
-			System.out.println("numÀº 30ÀÔ´Ï´Ù");
+			System.out.println("numì€ 30ì…ë‹ˆë‹¤");
 			break;
 			
 		default:
-			System.out.println("numÀº 10, 20, 30 ¸ğµÎ ¾Æ´Õ´Ï´Ù");
+			System.out.println("numì€ 10, 20, 30 ëª¨ë‘ ì•„ë‹™ë‹ˆë‹¤");
 		}
 
-		//case±¸¹®ÀÇ ¸¶Áö¸·¿¡ break; ÄÚµå¸¦ Àû¿ëÇØ¼­ »ç¿ëÇÑ´Ù
+		//caseêµ¬ë¬¸ì˜ ë§ˆì§€ë§‰ì— break; ì½”ë“œë¥¼ ì ìš©í•´ì„œ ì‚¬ìš©í•œë‹¤
 
 
 
 	}
 }
+

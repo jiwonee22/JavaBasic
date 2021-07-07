@@ -5,17 +5,17 @@ public class Array_03 {
 
 		int[] arr = {10, 20, 30, 40, 50, 60, 70, 80};
 
-		//¹è¿­ÀÇ ¿ä¼Ò °³¼ö
-		//	== ¹è¿­ÀÇ ±æÀÌ
-		//	-- ¹è¿­ÀÇ Å©±â
+		//ë°°ì—´ì˜ ìš”ì†Œ ê°œìˆ˜
+		//	== ë°°ì—´ì˜ ê¸¸ì´
+		//	-- ë°°ì—´ì˜ í¬ê¸°
 
-		System.out.println("¹è¿­ÀÇ ±æÀÌ : " + arr.length);
+		System.out.println("ë°°ì—´ì˜ ê¸¸ì´ : " + arr.length);
 
 		//----------------------------------------------------------
 		
 		System.out.println("-------------");
 		
-		//i, 0 ~ length-1, length ¹ø
+		//i, 0 ~ length-1, length ë²ˆ
 		for(int i=0; i<arr.length; i++) {
 			System.out.println( arr[i] );
 		}
@@ -30,7 +30,7 @@ public class Array_03 {
 		
 //		arr[33] = 999;
 		//ArrayIndexOutOfBoundsException
-		//	0º¸´Ù ÀÛ°Å³ª, lengthº¸´Ù Å©°Å³ª °°Àº ÀÎµ¦½º·Î Á¢±ÙÇßÀ» ¶§ ¹ß»ıÇÑ´Ù
+		//	0ë³´ë‹¤ ì‘ê±°ë‚˜, lengthë³´ë‹¤ í¬ê±°ë‚˜ ê°™ì€ ì¸ë±ìŠ¤ë¡œ ì ‘ê·¼í–ˆì„ ë•Œ ë°œìƒí•œë‹¤
 		
 //		arr[-7] = 999;
 		//ArrayIndexOutOfBoundsException
@@ -39,7 +39,7 @@ public class Array_03 {
 		
 //		int[] arr2 = new int[-10];
 		//NegativeArraySizeException
-		//	¹è¿­ÀÇ Å©±â¸¦ À½¼ö·Î ÁöÁ¤ÇÏ¿© »ı¼ºÇÏ·Á°í ÇÒ ¶§ ¹ß»ıÇÑ´Ù
+		//	ë°°ì—´ì˜ í¬ê¸°ë¥¼ ìŒìˆ˜ë¡œ ì§€ì •í•˜ì—¬ ìƒì„±í•˜ë ¤ê³  í•  ë•Œ ë°œìƒí•œë‹¤
 		
 	}
 }

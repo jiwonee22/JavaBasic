@@ -5,18 +5,18 @@ public class ArrayQuiz_02_4 {
 
 		int[] arr = {10, 17, 3, 9, 27, 10, 8, 9, 13, 21};
 
-		int[] over_arr = new int [arr.length]; //Áßº¹°ª ¹è¿­
-		int[] ret_arr = new int[arr.length]; //Áßº¹ÀÌ ¾Æ´Ñ °ª ¹è¿­
+		int[] over_arr = new int [arr.length]; //ì¤‘ë³µê°’ ë°°ì—´
+		int[] ret_arr = new int[arr.length]; //ì¤‘ë³µì´ ì•„ë‹Œ ê°’ ë°°ì—´
 
-		int overCnt = 0; //Áßº¹°ªÀÇ °³¼ö
-		int retCnt = 0; //Áßº¹ÀÌ ¾Æ´Ñ °ªÀÇ °³¼ö		
+		int overCnt = 0; //ì¤‘ë³µê°’ì˜ ê°œìˆ˜
+		int retCnt = 0; //ì¤‘ë³µì´ ì•„ë‹Œ ê°’ì˜ ê°œìˆ˜		
 
-		for(int i=0; i<arr.length; i++) { //±âÁØ°ª
+		for(int i=0; i<arr.length; i++) { //ê¸°ì¤€ê°’
 
-			boolean isOverlap = false; //Áßº¹°ªÀÌ¸é true
+			boolean isOverlap = false; //ì¤‘ë³µê°’ì´ë©´ true
 
 
-			//ÀÌ¹Ì Áßº¹°ªÀ¸·Î ÆÇº°µÈ ¼ıÀÚÀÎÁö È®ÀÎ
+			//ì´ë¯¸ ì¤‘ë³µê°’ìœ¼ë¡œ íŒë³„ëœ ìˆ«ìì¸ì§€ í™•ì¸
 			for(int j=0; j<over_arr.length; j++) {
 				if(arr[i] == over_arr[j]) {
 					isOverlap = true;
@@ -24,16 +24,16 @@ public class ArrayQuiz_02_4 {
 				}
 			}
 
-			//ÀÌÀü¿¡ Áßº¹°ªÀ¸·Î ÆÇº°µÈ ¼ıÀÚ¶ó¸é °Ç³Ê¶Ü
+			//ì´ì „ì— ì¤‘ë³µê°’ìœ¼ë¡œ íŒë³„ëœ ìˆ«ìë¼ë©´ ê±´ë„ˆëœ€
 			if( isOverlap ) {
 				continue;
 
 			} else {
 
-				// ºñ±³ÇØº¸Áö ¾ÊÀº ÀÎµ¦½º(±âÁØ°ªÀÇ ¿À¸¥ÂÊ ¿ä¼Òµé)¿¡
-				//Áßº¹°ªÀÌ ÀÖ´ÂÁö È®ÀÎÇÑ´Ù
+				// ë¹„êµí•´ë³´ì§€ ì•Šì€ ì¸ë±ìŠ¤(ê¸°ì¤€ê°’ì˜ ì˜¤ë¥¸ìª½ ìš”ì†Œë“¤)ì—
+				//ì¤‘ë³µê°’ì´ ìˆëŠ”ì§€ í™•ì¸í•œë‹¤
 				for(int j=i+1; j<arr.length; j++) {
-					if(arr[i] == arr[j]) { //Áßº¹°ª ¹ß°ß
+					if(arr[i] == arr[j]) { //ì¤‘ë³µê°’ ë°œê²¬
 						isOverlap = true; 
 						break;
 					}
@@ -42,7 +42,7 @@ public class ArrayQuiz_02_4 {
 
 			}
 
-			//ÃÖÁ¾ Ã³¸®
+			//ìµœì¢… ì²˜ë¦¬
 			if(isOverlap) {
 				over_arr[overCnt++] = arr[i];
 			} else {
@@ -53,10 +53,10 @@ public class ArrayQuiz_02_4 {
 		}
 		
 		
-		//--- ¹öºí Á¤·Ä ---
+		//--- ë²„ë¸” ì •ë ¬ ---
 		for(int i=0; i<over_arr.length-1; i++) {
 			for(int j=0; j<over_arr.length-1-i; j++) {
-				//0Àº ½º¿ÒÇÏÁö ¾ÊÀ½
+				//0ì€ ìŠ¤ì™‘í•˜ì§€ ì•ŠìŒ
 				
 				if(over_arr[j] > over_arr[j+1] && over_arr[j+1] != 0) {
 					int tmp = over_arr[j];
@@ -69,7 +69,7 @@ public class ArrayQuiz_02_4 {
 		
 		for(int i=0; i<ret_arr.length-1; i++) {
 			for(int j=0; j<ret_arr.length-1-i; j++) {
-				//0Àº ½º¿ÒÇÏÁö ¾ÊÀ½
+				//0ì€ ìŠ¤ì™‘í•˜ì§€ ì•ŠìŒ
 				
 				if(ret_arr[j] > ret_arr[j+1] && ret_arr[j+1] != 0) {
 					int tmp = ret_arr[j];
@@ -88,7 +88,7 @@ public class ArrayQuiz_02_4 {
 		
 		
 
-		//--- ÃÖÁ¾ Ãâ·Â ---
+		//--- ìµœì¢… ì¶œë ¥ ---
 		System.out.print("Overlap : ");
 		for(int i=0; i<overCnt; i++) {
 			System.out.print(over_arr[i] + " ");

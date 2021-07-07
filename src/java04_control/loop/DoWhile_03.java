@@ -5,46 +5,46 @@ import java.util.Scanner;
 public class DoWhile_03 {
 	public static void main(String[] args) {
 		
-		Scanner sc = new Scanner(System.in); //ÀÔ·Â°´Ã¼
+		Scanner sc = new Scanner(System.in); //ì…ë ¥ê°ì²´
 
-		int input; //ÀÔ·Â°ª
+		int input; //ì…ë ¥ê°’
 		
 		//--------------------------------------------------------
 		
-		//¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¸é ±× °ªÀ» ´Ù½Ã Ãâ·ÂÇØÁÖ´Â ÇÁ·Î±×·¥
-		// (99¸¦ ÀÔ·ÂÇÏ¸é Á¾·áÇÑ´Ù)
+		//ìˆ«ìë¥¼ ì…ë ¥í•˜ë©´ ê·¸ ê°’ì„ ë‹¤ì‹œ ì¶œë ¥í•´ì£¼ëŠ” í”„ë¡œê·¸ë¨
+		// (99ë¥¼ ì…ë ¥í•˜ë©´ ì¢…ë£Œí•œë‹¤)
 		
-		// (99¸¦ ÀÔ·ÂÇÏÁö ¾ÊÀ¸¸é ¹İº¹ÇÑ´Ù)
+		// (99ë¥¼ ì…ë ¥í•˜ì§€ ì•Šìœ¼ë©´ ë°˜ë³µí•œë‹¤)
 //		
 //		do {
-//			System.out.println("Input Number(Á¾·á=99) : ");
+//			System.out.println("Input Number(ì¢…ë£Œ=99) : ");
 //			input = sc.nextInt();
 //			
-//			System.out.println("ÀÔ·ÂÇÑ °ª : " + input);
+//			System.out.println("ì…ë ¥í•œ ê°’ : " + input);
 //			System.out.println();
 //		
 //		} while( input != 99 );
 //		
-//		System.out.println(" + + + ÇÁ·Î±×·¥ Á¾·á + + +");
+//		System.out.println(" + + + í”„ë¡œê·¸ë¨ ì¢…ë£Œ + + +");
 		
 		//------------------------------------------------------
 		
-		while ( true ) { //¹«ÇÑ·çÇÁ
+		while ( true ) { //ë¬´í•œë£¨í”„
 		
-			System.out.println("Input Number(Á¾·á=99) : ");
+			System.out.println("Input Number(ì¢…ë£Œ=99) : ");
 			input = sc.nextInt();
 			
-			System.out.println("ÀÔ·ÂÇÑ °ª : " + input);
+			System.out.println("ì…ë ¥í•œ ê°’ : " + input);
 			System.out.println();
 			
-			//ÀÔ·Â°ªÀÌ 99ÀÏ ¶§ ¹«ÇÑ·çÇÁ Áß´Ü½ÃÅ°±â
+			//ì…ë ¥ê°’ì´ 99ì¼ ë•Œ ë¬´í•œë£¨í”„ ì¤‘ë‹¨ì‹œí‚¤ê¸°
 			if( input == 99) {
-				break;	//¹İº¹¹® Áß´ÜÄÚµå
+				break;	//ë°˜ë³µë¬¸ ì¤‘ë‹¨ì½”ë“œ
 			}
 		
 		}
 		
-		System.out.println(" + + + ÇÁ·Î±×·¥ Á¾·á + + +");
+		System.out.println(" + + + í”„ë¡œê·¸ë¨ ì¢…ë£Œ + + +");
 		
 	}
 

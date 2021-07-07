@@ -3,19 +3,19 @@ package java04_control.condition;
 public class IfElse_01 {
 	public static void main(String[] args) {
 		
-//		if( Á¶°Ç½Ä ) {
-//			//Á¶°Ç½ÄÀÌ Âü(true)ÀÏ ¶§ ¼öÇàÇÏ´Â ÄÚµå ¿µ¿ª
+//		if( ì¡°ê±´ì‹ ) {
+//			//ì¡°ê±´ì‹ì´ ì°¸(true)ì¼ ë•Œ ìˆ˜í–‰í•˜ëŠ” ì½”ë“œ ì˜ì—­
 //		} else {
-//			//Á¶°Ç½ÄÀÌ °ÅÁş(false)ÀÏ ¶§ ¼öÇàÇÏ´Â ÄÚµå ¿µ¿ª		
+//			//ì¡°ê±´ì‹ì´ ê±°ì§“(false)ì¼ ë•Œ ìˆ˜í–‰í•˜ëŠ” ì½”ë“œ ì˜ì—­		
 //		}
 
 		//---------------------------------------------------
 		
 		int num = 13;
 		if( num == 11 ) {
-			System.out.println("numÀº 11ÀÌ´Ù");
+			System.out.println("numì€ 11ì´ë‹¤");
 		} else {
-			System.out.println("numÀº 11ÀÌ ¾Æ´Ï´Ù");
+			System.out.println("numì€ 11ì´ ì•„ë‹ˆë‹¤");
 		}
 		
 	}

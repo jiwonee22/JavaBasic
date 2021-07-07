@@ -5,29 +5,29 @@ public class Switch_02 {
 
 		int num = 20;
 		if ( num == 10 ) {
-			System.out.println("numÀº 10");
+			System.out.println("numì€ 10");
 		} else if ( num == 20 ) {
-			System.out.println("numÀº 20");
+			System.out.println("numì€ 20");
 		} else if ( num == 30 ) {
-			System.out.println("numÀº 30");
+			System.out.println("numì€ 30");
 		} else {
-			System.out.println("numÀº 10, 20, 30 ´Ù ¾Æ´Ô");
+			System.out.println("numì€ 10, 20, 30 ë‹¤ ì•„ë‹˜");
 		}
 
 		System.out.println("----------");
 
 		switch( num ) {
 		case 10:
-			System.out.println("numÀº 10");
+			System.out.println("numì€ 10");
 			break;
 		case 20:
-			System.out.println("numÀº 20");
+			System.out.println("numì€ 20");
 			break;
 		case 30:
-			System.out.println("numÀº 30");
+			System.out.println("numì€ 30");
 			break;
 		default:
-			System.out.println("numÀº 10, 20, 30 ´Ù ¾Æ´Ô");
+			System.out.println("numì€ 10, 20, 30 ë‹¤ ì•„ë‹˜");
 		}
 		
 		//------------------------------------------------------------
@@ -37,33 +37,33 @@ public class Switch_02 {
 		int score = 88;
 		
 		if( score >= 90 ) {
-			System.out.println("Aµî±Ş");
+			System.out.println("Aë“±ê¸‰");
 			
 		} else if( score >= 80 ) {
-			System.out.println("Bµî±Ş");
+			System.out.println("Bë“±ê¸‰");
 			
 		}
 		
 		System.out.println("-------------");
 		
-		//switch´Â ¹üÀ§ºñ±³¸¦ ÇÒ ¼ö ¾ø´Ù -> if¹® ½á¾ßÇÑ´Ù
+		//switchëŠ” ë²”ìœ„ë¹„êµë¥¼ í•  ìˆ˜ ì—†ë‹¤ -> ifë¬¸ ì¨ì•¼í•œë‹¤
 //		switch( score ) {
-//		case >=90: //¿¡·¯
-//		case >=80: //¿¡·¯
+//		case >=90: //ì—ëŸ¬
+//		case >=80: //ì—ëŸ¬
 //		}
 		
 		//------------------------------------------------------------
-		//ºñ±³´ë»óÀ¸·Î ¿¬»ê½ÄÀ» ³ÖÀ» ¼ö ÀÖ´Ù
-		//	-> ¿¬»ê°á°ú¸¦ ÀÌ¿ëÇØ ºñ±³ÇÑ´Ù
+		//ë¹„êµëŒ€ìƒìœ¼ë¡œ ì—°ì‚°ì‹ì„ ë„£ì„ ìˆ˜ ìˆë‹¤
+		//	-> ì—°ì‚°ê²°ê³¼ë¥¼ ì´ìš©í•´ ë¹„êµí•œë‹¤
 
-		switch( score / 10 ) { //scoreÀ» 10À¸·Î ³ª´« ¸ò, 10ÀÇ ÀÚ¸® ¼ıÀÚ
+		switch( score / 10 ) { //scoreì„ 10ìœ¼ë¡œ ë‚˜ëˆˆ ëª«, 10ì˜ ìë¦¬ ìˆ«ì
 		case 10:
 		case 9:
-			System.out.println("Aµî±Ş");
+			System.out.println("Aë“±ê¸‰");
 			break;
 
 		case 8:
-			System.out.println("Bµî±Ş");
+			System.out.println("Bë“±ê¸‰");
 			break;
 		}
 		

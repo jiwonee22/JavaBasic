@@ -5,36 +5,36 @@ import java.util.Scanner;
 public class ScannerEx_03 {
 	public static void main(String[] args) {
 		
-		//¹®ÀÚ¿­ ÀÔ·Â Ã³¸® ±â´É(¸Ş¼Òµå)
+		//ë¬¸ìì—´ ì…ë ¥ ì²˜ë¦¬ ê¸°ëŠ¥(ë©”ì†Œë“œ)
 		//	nextLine(), next()
 		
 		//--------------------------------------------------
 		
-		//import ÃÖÀûÈ­ ´ÜÃàÅ° : ctrl + shift + o
+		//import ìµœì í™” ë‹¨ì¶•í‚¤ : ctrl + shift + o
 		
-		Scanner sc = new Scanner(System.in); //Å°º¸µå ÀÔ·Â °´Ã¼
+		Scanner sc = new Scanner(System.in); //í‚¤ë³´ë“œ ì…ë ¥ ê°ì²´
 		
-		//¹®ÀÚ¿­ º¯¼ö
+		//ë¬¸ìì—´ ë³€ìˆ˜
 		String str1;
 		String str2;
 		
 		System.out.print("Input String : ");
 		
-		//¹®ÀÚ¿­ ÀÔ·Â ¹Ş±â
+		//ë¬¸ìì—´ ì…ë ¥ ë°›ê¸°
 //		str1 = sc.nextLine();
 //		str2 = sc.nextLine();
 		str1 = sc.next();
 		str2 = sc.next();
 		
-		System.out.println("---Ãâ·Â---");
+		System.out.println("---ì¶œë ¥---");
 		System.out.println("str1 : " + str1);
 		System.out.println("str2 : " + str2);
 		
 		//nextLine()
-		//	°³Çà¹®ÀÚ(¿£ÅÍ°ª)À» ±âÁØÀ¸·Î ÀÔ·ÂÇÑ ÇÑ ÁÙÀ» ÇÏ³ªÀÇ ¹®ÀÚ¿­·Î ÆÇ´ÜÇÑ´Ù
+		//	ê°œí–‰ë¬¸ì(ì—”í„°ê°’)ì„ ê¸°ì¤€ìœ¼ë¡œ ì…ë ¥í•œ í•œ ì¤„ì„ í•˜ë‚˜ì˜ ë¬¸ìì—´ë¡œ íŒë‹¨í•œë‹¤
 		
 		//next()
-		//	°ø¹é¹®ÀÚ(white space)¸¦ ±âÁØÀ¸·Î ÇÏ³ªÀÇ ¹®ÀÚ¿­·Î ÆÇ´ÜÇÑ´Ù
+		//	ê³µë°±ë¬¸ì(white space)ë¥¼ ê¸°ì¤€ìœ¼ë¡œ í•˜ë‚˜ì˜ ë¬¸ìì—´ë¡œ íŒë‹¨í•œë‹¤
 		
 		
 		

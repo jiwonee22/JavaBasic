@@ -9,25 +9,25 @@ public class MethodQuizEx {
 		
 		MethodQuiz mq = new MethodQuiz();
 		
-		//Q1. 1~100Ãâ·Â
+		//Q1. 1~100ì¶œë ¥
 		mq.print100();
 		System.out.println("---------");
 	
 		
-		//Q2. ÀÔ·Â°ª¸¸Å­ Hello Ãâ·Â
-		System.out.print("¾ó¸¶±îÁö Ãâ·Â? ");
+		//Q2. ì…ë ¥ê°’ë§Œí¼ Hello ì¶œë ¥
+		System.out.print("ì–¼ë§ˆê¹Œì§€ ì¶œë ¥? ");
 		int num = sc.nextInt(); 
 		
 		mq.printHello( num ); 
 		System.out.println("---------");
 		
 
-		//Q3. ÀÔ·ÂÇÑ È½¼ö¸¸Å­ ÀÔ·ÂÇÑ ÅØ½ºÆ® Ãâ·Â
-		System.out.print("¸î¹ø Ãâ·Â? ");
+		//Q3. ì…ë ¥í•œ íšŸìˆ˜ë§Œí¼ ì…ë ¥í•œ í…ìŠ¤íŠ¸ ì¶œë ¥
+		System.out.print("ëª‡ë²ˆ ì¶œë ¥? ");
 		int cnt = sc.nextInt();
 		
-		sc.nextLine(); //¹öÆÛ ºñ¿ì±â
-		System.out.print("¹«¾ùÀ» Ãâ·Â? ");
+		sc.nextLine(); //ë²„í¼ ë¹„ìš°ê¸°
+		System.out.print("ë¬´ì—‡ì„ ì¶œë ¥? ");
 		String text = sc.nextLine();
 		
 		mq.printText(cnt, text);

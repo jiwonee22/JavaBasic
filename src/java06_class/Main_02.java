@@ -3,34 +3,34 @@ package java06_class;
 public class Main_02 {
 	public static void main(String[] args) {
 		
-		//** ±âº»°ª
-//		intÇü - 0
-//		doubleÇü - 0.0
-//		booleanÇü - false
-//		char - '\0' (null ¹®ÀÚ)
+		//** ê¸°ë³¸ê°’
+//		intí˜• - 0
+//		doubleí˜• - 0.0
+//		booleaní˜• - false
+//		char - '\0' (null ë¬¸ì)
 //		
 //		float - 0.0f
 //		long - 0L
 		
 		//------------------------------------
 		
-		//**ÂüÁ¶ÇüÀÇ ±âº»°ª
+		//**ì°¸ì¡°í˜•ì˜ ê¸°ë³¸ê°’
 		
 		//	null
-		//	 ÂüÁ¶´ë»óÀÌ ¾ø´Â »óÅÂ
+		//	 ì°¸ì¡°ëŒ€ìƒì´ ì—†ëŠ” ìƒíƒœ
 		
 		//------------------------------------
 		
-		Class_02 cl = null; //°´Ã¼ º¯¼ö ¼±¾ğ
+		Class_02 cl = null; //ê°ì²´ ë³€ìˆ˜ ì„ ì–¸
 		
-		cl = new Class_02(); //°´Ã¼ »ı¼º, ÀÎ½ºÅÏ½ºÈ­
+		cl = new Class_02(); //ê°ì²´ ìƒì„±, ì¸ìŠ¤í„´ìŠ¤í™”
 		
-		//¸â¹ö ÇÊµå°ª Ãâ·Â
+		//ë©¤ë²„ í•„ë“œê°’ ì¶œë ¥
 		System.out.println( cl.num4 ); //public
 		System.out.println( cl.num3 ); //protected
 		System.out.println( cl.num2 ); //default, package
 		
-//		System.out.println( cl.num1 ); //private, ¿¡·¯
+//		System.out.println( cl.num1 ); //private, ì—ëŸ¬
 		
 		
 	}

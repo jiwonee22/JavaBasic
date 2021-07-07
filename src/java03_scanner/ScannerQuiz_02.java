@@ -3,54 +3,54 @@ package java03_scanner;
 import java.util.Scanner;
 
 public class ScannerQuiz_02 {
-	//ÇĞ»ı Á¤º¸ °ü¸® ÇÁ·Î±×·¥
-	//	ÀÌ¸§, ³ªÀÌ, ¼ºº°, ±¹¾î, ¿µ¾î, ¼öÇĞ
-	//	6°¡Áö Á¤º¸¸¦ ÀúÀåÇÒ ¼ö ÀÖ´Â º¯¼ö¸¦ ¸¸µé°í
-	//	ÃÑÁ¡°ú Æò±ÕÀ» Æ÷ÇÔÇÑ °á°ú¸¦ Ãâ·ÂÇÑ´Ù
+	//í•™ìƒ ì •ë³´ ê´€ë¦¬ í”„ë¡œê·¸ë¨
+	//	ì´ë¦„, ë‚˜ì´, ì„±ë³„, êµ­ì–´, ì˜ì–´, ìˆ˜í•™
+	//	6ê°€ì§€ ì •ë³´ë¥¼ ì €ì¥í•  ìˆ˜ ìˆëŠ” ë³€ìˆ˜ë¥¼ ë§Œë“¤ê³ 
+	//	ì´ì ê³¼ í‰ê· ì„ í¬í•¨í•œ ê²°ê³¼ë¥¼ ì¶œë ¥í•œë‹¤
 	
 	public static void main(String[] args) {
 		
-		Scanner sc = new Scanner(System.in); //ÀÔ·Â °´Ã¼
+		Scanner sc = new Scanner(System.in); //ì…ë ¥ ê°ì²´
 		
 		//-----------------------------------------
 		
-		//ÀÌ¸§ ÀÔ·Â
-		System.out.print("ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä : ");
-		String name = sc.nextLine(); //ÀÌ¸§
+		//ì´ë¦„ ì…ë ¥
+		System.out.print("ì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš” : ");
+		String name = sc.nextLine(); //ì´ë¦„
 //		System.out.println("[TEST] name : " + name);
 		
-		//³ªÀÌ ÀÔ·Â
-		System.out.print("³ªÀÌ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
-		int age = sc.nextInt();	//³ªÀÌ
+		//ë‚˜ì´ ì…ë ¥
+		System.out.print("ë‚˜ì´ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
+		int age = sc.nextInt();	//ë‚˜ì´
 //		System.out.println("[TEST] age : " + age);
 
-		//¼ºº° ÀÔ·Â
-		System.out.print("¼ºº°À» ÀÔ·ÂÇÏ¼¼¿ä(M/F) : ");
-		sc.nextLine(); //ÀÔ·Â ¹öÆÛ ºñ¿ì±â
-		char gender = sc.nextLine().charAt(0); //¹öÆÛ¹®Á¦ ¹ß»ıÇÔ!
+		//ì„±ë³„ ì…ë ¥
+		System.out.print("ì„±ë³„ì„ ì…ë ¥í•˜ì„¸ìš”(M/F) : ");
+		sc.nextLine(); //ì…ë ¥ ë²„í¼ ë¹„ìš°ê¸°
+		char gender = sc.nextLine().charAt(0); //ë²„í¼ë¬¸ì œ ë°œìƒí•¨!
 //		System.out.println("[TEST] gender : " + gender);
 		
-		//±¹¾î ÀÔ·Â
-		System.out.print("±¹¾î Á¡¼ö´Â? : ");
-		int kor = sc.nextInt(); //±¹¾î
+		//êµ­ì–´ ì…ë ¥
+		System.out.print("êµ­ì–´ ì ìˆ˜ëŠ”? : ");
+		int kor = sc.nextInt(); //êµ­ì–´
 		
-		//¿µ¾î ÀÔ·Â
-		System.out.print("¿µ¾î Á¡¼ö´Â? : ");
-		int eng = sc.nextInt(); //¿µ¾î
+		//ì˜ì–´ ì…ë ¥
+		System.out.print("ì˜ì–´ ì ìˆ˜ëŠ”? : ");
+		int eng = sc.nextInt(); //ì˜ì–´
 		
-		//¼öÇĞ ÀÔ·Â
-		System.out.print("¼öÇĞ Á¡¼ö´Â? : ");
-		int math = sc.nextInt(); //¼öÇĞ
-//		System.out.println("[TEST] Á¡¼öµé : " + kor + ", " + eng + ", " + math);
+		//ìˆ˜í•™ ì…ë ¥
+		System.out.print("ìˆ˜í•™ ì ìˆ˜ëŠ”? : ");
+		int math = sc.nextInt(); //ìˆ˜í•™
+//		System.out.println("[TEST] ì ìˆ˜ë“¤ : " + kor + ", " + eng + ", " + math);
 		
-		//ÃÑÁ¡ ±¸ÇÏ±â
+		//ì´ì  êµ¬í•˜ê¸°
 		int total = kor + eng + math;
 
-		//Æò±Õ ±¸ÇÏ±â
+		//í‰ê·  êµ¬í•˜ê¸°
 		double avg = total /(double)3;
 		
-		System.out.println("===== Ãâ·Â =====");
-		System.out.println("ÀÌ¸§\t³ªÀÌ\t¼ºº°\t±¹¾î\t¿µ¾î\t¼öÇĞ\tÃÑÁ¡\tÆò±Õ");
+		System.out.println("===== ì¶œë ¥ =====");
+		System.out.println("ì´ë¦„\të‚˜ì´\tì„±ë³„\têµ­ì–´\tì˜ì–´\tìˆ˜í•™\tì´ì \tí‰ê· ");
 		System.out.print(name + "\t"
 				+ age + "\t"
 				+ gender + "\t"
@@ -64,7 +64,7 @@ public class ScannerQuiz_02 {
 		
 		
 //		
-//		//1. º¯¼ö ¼³Á¤
+//		//1. ë³€ìˆ˜ ì„¤ì •
 //		String name;
 //		int age;
 //		char gender;
@@ -77,7 +77,7 @@ public class ScannerQuiz_02 {
 //		
 //		Scanner in = new Scanner(System.in);
 //		
-//		//2. µ¥ÀÌÅÍ ÀÔ·Â
+//		//2. ë°ì´í„° ì…ë ¥
 //		System.out.print("Input Name : ");
 //		name = in.nextLine();
 //		
@@ -95,15 +95,15 @@ public class ScannerQuiz_02 {
 //		System.out.print("Input Mathematics : ");
 //		mathematics = in.nextInt();
 //		
-//		//3. ¹®Á¦¿¡ ÁÖ¾îÁø °è»ê
+//		//3. ë¬¸ì œì— ì£¼ì–´ì§„ ê³„ì‚°
 //	
 //		sum = korean + english + mathematics;
 //		average = sum / (double)3;
 //		
-//		//4. °á°ú Ãâ·Â
+//		//4. ê²°ê³¼ ì¶œë ¥
 //		
-//		System.out.println("===== Ãâ·Â =====");
-//		System.out.println("ÀÌ¸§	³ªÀÌ	¼ºº°	±¹¾î	¿µ¾î	¼öÇĞ	ÃÑÁ¡	Æò±Õ");
+//		System.out.println("===== ì¶œë ¥ =====");
+//		System.out.println("ì´ë¦„	ë‚˜ì´	ì„±ë³„	êµ­ì–´	ì˜ì–´	ìˆ˜í•™	ì´ì 	í‰ê· ");
 //		System.out.println(name + age + korean + english + mathematics + sum + average);
 //		
 //		
