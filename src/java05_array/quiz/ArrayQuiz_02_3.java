@@ -1,4 +1,4 @@
-package quiz;
+package java05_array.quiz;
 
 public class ArrayQuiz_02_3 {
 	public static void main(String[] args) {

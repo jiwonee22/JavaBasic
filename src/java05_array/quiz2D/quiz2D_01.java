@@ -1,4 +1,4 @@
- package java05_array.quiz2D;
+package java05_array.quiz2D;
 
 public class quiz2D_01 {
 	public static void main(String[] args) {
