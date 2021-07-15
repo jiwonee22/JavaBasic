@@ -34,12 +34,14 @@ public class RanQuiz_01 {
 				} else if(com < user) {
 					System.out.println("============DOWN=============");
 				} else if(com == user) {
-					System.out.println("게임 종료");
 					System.out.println("유저 승리!");
+					System.out.println("게임 종료");
 					break;
 				}
 			} else {
 				System.out.println("컴퓨터 승리!");
+				System.out.println("게임 종료");
+
 			}
 		}
 	}

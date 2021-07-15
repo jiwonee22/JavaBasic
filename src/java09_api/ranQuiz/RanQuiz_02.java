@@ -5,39 +5,70 @@ import java.util.Scanner;
 
 public class RanQuiz_02 {
 	public static void main(String[] args) {
-//		 + 배스킨라빈스31 게임
-//		  - 컴퓨터와 사용자가 번갈아가면서 연속적으로 숫자를 말한다
-//		  - 컴퓨터와 사용자는 한번의 기회에 연속된 숫자를 1개부터 3개까지
-//		   말할 수 있다
-//		  - 컴퓨터는 자기 순서에 랜덤한 갯수의 연속된 숫자를 말한다
-//		  - 사용자는 1~3 입력을 통해 연속된 숫자를 말한다
-//		  - 31을 말하는 사람이 진다
-//
-//
-//		  * 추가 사항
-//			 31에 가까워지면 컴퓨터는 랜덤이 아닌 자신이 이길수
-//			있는 숫자까지만 말한다
-//
-//			ex. 사용자가 29까지 말했다면
-//			  컴퓨터는 무조건 30까지만 말한다
 		
-		Random ran = new Random();
-		Scanner sc = new Scanner(System.in);
-
+		int com = 0; //컴퓨터의 숫자 (랜덤)
+		int user = 0; //사용자의 숫자 (입력)
+		
+		Scanner sc = new Scanner(System.in); //입력 객체
+		Random ran = new Random(); //랜덤 객체
 
 		
-		for(int i=0; i<ran.nextInt(2)+1; i++) {
-			System.out.println(i+1);
+		int num = 1; //게임 진행 숫자
+		int max = 31; //게임 종료 숫자
+		
+		int winner = 0; //승자 체크, 1: user, 2: com
+		
+		
+		while(num<=max) {
+			com = ran.nextInt(3) + 1; //컴퓨터의 연속숫자 개수, 1~3 
+			
+			for(int i=0; i<com && num<=max; i++) {
+				System.out.println("com >> " + num++);
+				
+				if(num>max)	winner=1; //사용자 승리
+			}
+	
+			
+			
+			while(num<=max) {
+				System.out.println();
+				System.out.print(">> 몇 개를 연속으로? ");
+				user = sc.nextInt();
+				
+				if(user>=1 && user<=3) {
+					break;
+				}
+				
+				System.out.println("[SYSTEM] 1~3만 입력하세요");
+			}
+			
+			for(int i=0; i<user && num<=max; i++) {
+				System.out.println("user >> " + num++);
+				
+				if(num>max)	winner=2; //컴퓨터 승리
+			}
 		}
 		
-		for(int i=0; i<sc.nextInt(); i++) {
-			int user = sc.nextInt();
-			System.out.println(i);
+		
+		
+		//승자 출력
+		if(winner == 1) {
+			System.out.println("사용자 승리!");
+		} else if(winner == 2) {
+			System.out.println("컴퓨터 승리!");
 		}
-		
-		
-		System.out.println();
-		
 		
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
