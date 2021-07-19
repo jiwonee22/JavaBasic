@@ -10,7 +10,7 @@ public class Tv extends Product {
 	}
 
 	//메소드
-	@overrride
+	@Override
 	public void out() {
 		System.out.println("TV : " + model + ", " + price);
 	}
