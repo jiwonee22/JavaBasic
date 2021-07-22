@@ -56,7 +56,7 @@ public class InputStreamEx {
 				
 			} catch (IOException e) {
 				e.printStackTrace();
-			}
+			} 
 			
 		}
 		
@@ -69,11 +69,28 @@ public class InputStreamEx {
 
 
 
+//EOF(End Of Stream)를 만날 때까지 반복
+//-> EOF를 만나지 않으면 계속 반복한다
+//-> 키보드에는 EOF가 없다
+//-> 계속 반복하게된다
+//
+//** 키보드에서 ctrl + z를 누르면
+// 가상키(없는 걸 만든 키) EOF가 들어간다
+//
+//	-> EOF를 만난다
+//	-> 반복이 종료된다
+//
+//** AppleBanana엔터 -> 마지막에 EOF가 아님, 개행문자일 뿐
 
 
 
 
 
+
+//buf배열의 상태
+//
+//A  p  p  l  e \r \n \0 \0 \0 \0 \0 \0 \0 \0 \0
+//0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15
 
 
 
