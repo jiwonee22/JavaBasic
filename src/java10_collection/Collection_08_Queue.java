@@ -7,6 +7,7 @@ public class Collection_08_Queue {
 	public static void main(String[] args) {
 		
 		Queue queue = new LinkedList();
+		//Queue는 인터페이스, 객체 생성이 불가능하다
 		
 	
 		//큐에 데이터 넣기 - 인큐(Enqueue)
@@ -33,3 +34,4 @@ public class Collection_08_Queue {
 		
 	}
 }
+ 
