@@ -1,0 +1,541 @@
+ + 조인 문법 종류
+
+  - 오라클 전용 문법
+	오라클 SQL만의 특수한 조인 문법
+
+
+  - ANSI 표준 문법
+	ANSI기구가 표준으로 지정한 조인 문법
+
+
+
+  ** ANSI ( American Nation Standards Institude )
+	미 국립 표준 협회
+	ISO 기구에 속해있는 협회
+
+  ** ISO ( International Standard Organization )
+	국제 표준화 기구
+
+  ** IEEE ( Institude of Electric and Electronics Engineers )
+	전기, 전자 기술자 학회
+
+	IEEE 802.3 - 이더넷 (유선 통신)
+
+	IEEE 802.11 - 와이파이
+
+	 + EQUI JOIN, 등가 조인
+  - 오라클 전용 구문
+
+  - FROM절에 조인 대상 테이블들을 , 로 나열한다
+
+  - 테이블들의 공통데이터를 가지는 컬럼으로 조인한다(equal비교, 등가 비교, =)
+  - WHERE절을 이용하여 조인 조건을 적용한다
+
+  - 가장 많이 사용되는 조인 구문이다
+
+
+ + INNER JOIN, 내부 조인
+  - ANSI 표준 문법
+
+  - EQUI JOIN과 같은 결과를 얻을 수 있다
+
+  - 구문 형식
+	FROM 조인대상테이블
+	INNER JOIN 조인테이블
+	  ON 조인조건
+	
+	 + NON-EQUI JOIN, 비등가 조인
+  - EQUI-JOIN과 문법은 같으나 조인조건의 비교 연산자 =(equal)이 아닌 경우
+
+
+ + SELF JOIN, 자체 조인
+  - 하나의 테이블이 자기 자신 테이블과 조인하는 것
+
+
+ + CROSS JOIN, 상호 조인
+  - 카테시안 곱을 얻을 때 사용하는 구문
+
+  ** 카테시안 곱, Cartesian Product
+	테이블의 조인 결과로 조회가능한 모든 경우의 수를 출력하는 것
+	모든 컬럼, 모든 행의 조합을 생성한다
+
+
+ + NATURAL JOIN, 자연 조인
+  - 조인 조건을 설정하지 않고 EQUI JOIN(등가 조인)을 자동으로 수행한다
+
+  - 조인 조건이 되는 컬럼을 알아서 자동으로 판단한다
+	-> 조인 조건을 개발자가 마음대로 제어하는 데 어려움이 있다
+	
+	 + OUTER JOIN, 외부 조인
+  - 조인 조건에 사용한 컬럼의 값을 한 쪽 테이블이 가지고 있지 않을 때
+   사용하는 조인
+
+  - NULL값이 포함된 컬럼을 조인 결과로 추가할 때 사용할 수 있다
+
+  - 서로 일치하지 않는 각각의 데이터를 조인 결과에 추가해준다
+
+
+  - 오라클 전용구문에서는 조인 조건에 (+)연산자를 추가해서 사용한다
+	-> (+) : 외부(OUTER) 조인 연산자
+
+  - EQUI JOIN구문에서 조인 조건의 비교컬럼에 연산자를 붙인다
+	-> 연산자가 적용된 컬럼의 테이블쪽에 null값을 채워준다
+
+
+  - 조인조건의 왼쪽 컬럼쪽 테이블 데이터가 부족하면 왼쪽컬럼에 (+) 사용한다
+  - 조인조건의 오른쪽 컬럼쪽 테이블 데이터가 부족하면 오른쪽컬럼에 (+) 사용한다
+
+
+
+ + 오라클 구문 -> ANSI 구문 변환 방법
+
+  ** FROM절의 테이블 순서와 조인조건의 컬럼 순서를 같은 순서로 둬야 한다
+
+  - 조인조건의 왼쪽 컬럼에 (+)연산자가 붙어있으면 RIGHT OUTER JOIN으로 변환
+  - 조인조건의 오른쪽 컬럼에 (+)연산자가 붙어있으면 LEFT OUTER JOIN으로 변환
+
+
+
+ + FULL OUTER JOIN
+  - ANSI 표준 구문으로만 제공된다
+
+  - 조인되는 테이블 양쪽에 모두 NULL데이터를 추가할 때 사용한다
+  
+   + TCL(Transaction Control Language)
+  - 트랜잭션 제어(관리) SQL 구문
+
+	COMMIT - 트랜잭션 영구 반영(물리적으로 저장된다)
+	ROLLBACK - 원상 복구(작업 내역을 되돌린다)
+
+
+ + 트랜잭션, Transaction
+  - 클라이언트 별로 작업 내역을 임시로 보관하는 것이다
+
+  - 데이터베이스의 작업 단위
+
+  - DML의 INSERT, UDPATE, DELETE 내역만 보관한다
+  - SELECT는 보관하지 않는다
+  
+	 + 서브쿼리, Subquery
+  - SQL문장에 포함된 또 다를 SQL구문을 뜻한다
+
+  - 메인쿼리(외부쿼리)와 서브쿼리(내부쿼리)로 지칭한다
+
+  - 서브쿼리는 ()괄호로 묶어서 표현한다
+
+
+ + 서브쿼리의 종류 : 적용하는 위치에 따른 분류
+  - 스칼라 서브쿼리 : SELECT절의 컬럼으로 사용되는 서브쿼리
+
+  - 서브쿼리 : WHERE의 조건으로 사용되는 서브쿼리
+
+  - 인라인 뷰 : FROM 절의 조회 테이블로 사용되는 서브쿼리
+
+
+ + 서브쿼리의 종류 : 서브쿼리 수행 결과의 형태에 따른 분류
+  - 단일 행 서브쿼리 : 수행 결과가 하나의 행으로 나오는 서브쿼리
+
+  - 다중 행 서브쿼리 : 수행 결과가 여러 행으로 나오는 서브쿼리
+
+	** 단일행, 다중행 서브쿼리는 사용할 수 있는 연산자가 달라진다
+
+
+  - 다중 열 서브쿼리 : 서브쿼리의 결과가 여러 컬럼(열)로 나오는 서브쿼리
+	
+	 + WITH절
+  - 인라인 뷰(서브쿼리)에 이름을 붙이는 것
+
+  - 임시로 인라인뷰에 대한 별칭을 붙여 사용하는 것이다
+
+
+  - 구문 형식
+
+	WITH [별칭] AS (
+	  [서브쿼리, 인라인 뷰]
+	)
+
+	SELECT (WITH로 설정된 별칭 사용 가능)
+
+
+	** SELECT를 수행할 때 WITH절과 함께 실행해야한다
+	
+	---------------------------------------------------------------------------------------------------------------
+	
+	SELECT * FROM emp, dept
+WHERE emp.deptno = dept.deptno; --(조인 조건)
+
+SELECT empno, ename, deptno FROM emp, dept --에러, deptno컬럼을에 테이블을 지정하지 않음
+WHERE emp.deptno = dept.deptno;
+
+SELECT empno, ename, emp.deptno, dept.deptno FROM emp, dept
+WHERE emp.deptno = dept.deptno;
+
+-- 테이블이름에 Alias(별칭)을 붙여 작성하면 편하다
+SELECT empno, ename, E.deptno
+FROM emp E, dept D
+WHERE E.deptno = D.deptno;
+
+
+
+
+
+-- 오라클 EQUI JOIN, 등가 조인
+SELECT empno, ename, E.deptno, dname
+FROM emp E, dept D
+WHERE E.deptno = D.deptno --조인 조건
+    AND empno > 7600 --일반 조회 조건
+ORDER BY deptno, empno; --정렬
+
+--ANSI, INNER JOIN, 내부 조인
+SELECT empno, ename, E.deptno, dname
+FROM emp E --조인 대상 테이블
+INNER JOIN dept D --조인 테이블
+    ON E.deptno = D.deptno --조인 조건
+WHERE empno > 7600 --일반 조회 조건
+ORDER BY deptno, empno; --정렬
+
+
+
+
+
+-- NON-EQUI JOIN, 비등가 조인
+SELECT * FROM emp;
+SELECT * FROM salgrade;
+
+--오라클 구문
+SELECT ename, sal, grade
+FROM emp, salgrade
+WHERE sal BETWEEN losal AND hisal --조인 조건
+ORDER BY grade, sal;
+
+--ANSI 구문
+SELECT ename, sal, grade
+FROM emp
+INNER JOIN salgrade
+    ON sal BETWEEN losal AND hisal --조인 조건
+ORDER BY grade, sal;
+
+
+
+
+
+-- SELF JOIN, 자체 조인
+SELECT * FROM emp EMPLOYEE;
+SELECT * FROM emp MANAGER;
+
+--오라클
+SELECT
+    E.empno, E.ename, E.mgr, M.empno "MGRNO", M.ename "MGRNAME"
+FROM emp E, emp M
+WHERE E.mgr = M.empno --조인 조건
+ORDER BY E.empno;
+
+-- ANSI
+SELECT
+    E.empno, E.ename, E.mgr, M.empno "MGRNO", M.ename "MGRNAME"
+FROM emp E
+INNER JOIN emp M
+    ON E.mgr = M.empno --조인 조건
+ORDER BY E.empno;
+
+
+
+
+
+-- CROSS JOIN, 상호 조인
+SELECT * FROM emp, dept; --조인조건 없이 조회
+
+--ANSI 구문
+SELECT * FROM emp
+CROSS JOIN dept;
+
+
+
+
+
+-- NATURAL JOIN, 자연 조인
+SELECT *
+FROM emp
+NATURAL JOIN dept
+ORDER BY deptno, empno;
+
+
+
+
+
+--USING 키워드
+-- JOIN 키워드와 함께 사용 가능
+-- 조인 컬럼을 지정한다
+-- 연산자 없이 컬럼만 지정한다
+SELECT * FROM emp
+INNER JOIN dept
+USING ( deptno );
+
+SELECT * FROM emp E
+INNER JOIN dept D
+    ON E.deptno = D.deptno;
+
+-- INNER JOIN에서 INNER 키워드 생략 가능
+SELECT * FROM emp E
+JOIN dept D
+    ON E.deptno = D.deptno;
+
+SELECT * FROM emp E
+JOIN dept D USING ( deptno );
+
+
+
+
+--사원들이 근무중인 부서의 번호
+SELECT DISTINCT deptno FROM emp; --10,20,30
+
+--부서 번호
+SELECT deptno FROM dept; --10,20,30,40
+
+SELECT * FROM dept WHERE deptno = 40;
+
+
+--OUTER JOIN, 외부 조인
+
+--오라클 구문
+SELECT empno, ename, D.deptno, dname
+FROM emp E, dept D
+WHERE E.deptno(+) = D.deptno --조인조건
+ORDER BY deptno, empno;
+
+--ANSI 구문
+SELECT empno, ename, D.deptno, dname
+FROM emp E
+RIGHT OUTER JOIN dept D
+    ON E.deptno = D.deptno --조인조건
+ORDER BY deptno, empno;
+
+
+
+
+
+SELECT
+    E.empno, E.ename, E.mgr, M.ename "MGR_NAME"
+FROM emp E, emp M
+WHERE E.mgr = M.empno(+)
+ORDER BY E.empno;
+
+SELECT
+    E.empno, E.ename, E.mgr, M.ename "MGR_NAME"
+FROM emp E
+LEFT OUTER JOIN emp M
+    ON E.mgr = M.empno
+ORDER BY E.empno;
+
+
+
+
+
+--FULL OUTER JOIN 테스트 데이터
+DROP TABLE test1; --테이블 삭제
+DROP TABLE test2; --테이블 삭제
+CREATE TABLE test1 ( no NUMBER ); --테이블 생성
+CREATE TABLE test2 ( no NUMBER ); --테이블 생성
+
+DELETE test1; --테이블 데이터 전체 삭제
+INSERT INTO test1 VALUES ( 10 ); --데이터 삽입
+INSERT INTO test1 VALUES ( 20 ); --데이터 삽입
+INSERT INTO test1 VALUES ( 30 ); --데이터 삽입
+
+DELETE test2; --테이블 데이터 전체 삭제
+INSERT INTO test2 VALUES ( 10 ); --데이터 삽입
+INSERT INTO test2 VALUES ( 20 ); --데이터 삽입
+INSERT INTO test2 VALUES ( 40 ); --데이터 삽입
+
+--rollback; --작업 되돌리기
+--commit; --작업 반영하기
+
+SELECT * FROM test1; -- 10, 20, 30
+SELECT * FROM test2; -- 10, 20, 40
+
+
+-- 내부 조인 -- 두 테이블에 모두 있는 데이터만 조회
+SELECT * FROM test1 T1, test2 T2
+WHERE T1.no = T2.no;
+
+-- 외부 조인
+SELECT * FROM test1 T1, test2 T2
+WHERE T1.no(+) = T2.no; -- 왼쪽(T1)테이블에 null 추가
+
+SELECT * FROM test1 T1, test2 T2
+WHERE T1.no = T2.no(+); -- 오른쪽(T2)테이블에 null 추가
+
+--에러, (+)연산자는 조인조건의 양쪽 컬럼에 동시에 사용할 수 없다
+SELECT * FROM test1 T1, test2 T2
+WHERE T1.no(+) = T2.no(+);
+
+-- FULL OUTER JOIN -- 양쪽 테이블에 모두 null 추가
+SELECT * FROM test1 T1
+FULL OUTER JOIN test2 T2
+    ON T1.no = T2.no;
+
+
+-- 서브쿼리, Subquery
+
+-- 'KING' 의 부서번호 조회 : 10
+SELECT deptno FROM emp
+WHERE ename = upper('king');
+
+-- 10번 부서의 정보 조회
+SELECT * FROM dept
+WHERE deptno = 10;
+
+
+--서브쿼리를 이용하여 해결하기
+SELECT * FROM dept
+WHERE deptno = (
+    SELECT deptno FROM emp
+    WHERE ename = upper('king') );
+
+--조인을 이용하여 해결하기
+SELECT D.* FROM dept D, emp E
+WHERE D.deptno = E.deptno --조인조건
+    AND ename = upper('king'); --일반조회조건
+
+
+
+--QUIZ. 전체 평균 임금보다 급여가 많은 사원(emp) 조회하기
+--  평균 : 그룹함수 avg()
+
+--에러, 그룹함수는 WHERE절에서 사용할 수 없다
+SELECT empno, ename FROM emp
+WHERE sal > avg(sal);
+
+--에러, HAVING절은 GROUP BY 절이 있어야 사용할 수 있다
+SELECT empno, ename FROM emp
+HAVING sal > avg(sal);
+
+
+--> 해결법
+--  서브쿼리를 이용한 해결하기
+
+--SELECT empno, ename FROM emp
+--WHERE sal > (전체평균임금)
+
+SELECT empno, ename FROM emp
+WHERE sal > (
+    SELECT avg(sal) FROM emp
+);
+
+-- 조회되는 컬럼에 전체 평균임금 추가하기
+SELECT
+    empno, ename, ( SELECT round(avg(sal), 2) FROM emp ) avg_sal
+FROM emp
+WHERE sal > (
+    SELECT avg(sal) FROM emp );
+
+
+
+-- 가장 최근에 입사한 사원 조회하기
+SELECT max(hiredate) FROM emp; --가장 최근에 입사한 날짜
+
+SELECT * FROM emp
+WHERE hiredate = (
+    SELECT max(hiredate) FROM emp );
+
+
+--잘못된 경우
+SELECT empno, ename, MAX(hiredate)
+FROM emp
+GROUP BY empno, ename;
+
+--잘못된 경우
+SELECT empno, ename
+FROM emp
+WHERE hiredate = MAX(hiredate);
+
+--잘못된 경우
+SELECT empno, ename, hiredate
+FROM emp
+GROUP BY empno, ename, hiredate
+HAVING hiredate = MAX(hiredate);
+
+
+
+
+
+--QUIZ. 전체 평균 임금보다 부서 별 평균임금이 높은 부서
+--deptno, avg_sal 을 조회한다
+
+--  10  2916.67
+--  20  2258.33
+
+SELECT deptno, round(avg(sal), 2) avg_sal
+FROM emp
+GROUP BY deptno
+HAVING avg(sal) > (
+    SELECT avg(sal) FROM emp )
+ORDER BY deptno;
+
+
+
+
+
+-- 인라인 뷰
+SELECT * FROM emp; --테이블 조회
+
+SELECT * FROM ( --인라인 뷰 조회
+    SELECT empno, ename FROM emp
+);
+
+
+
+-- 인라인뷰 와 dept테이블 조인하기
+SELECT
+    E.deptno, D.dname, E.avg_sal
+FROM (
+    SELECT deptno, round(avg(sal), 2) avg_sal
+    FROM emp
+    GROUP BY deptno
+    HAVING avg(sal) > (
+        SELECT avg(sal) FROM emp )
+) E
+INNER JOIN dept D
+    ON E.deptno = D.deptno
+ORDER BY deptno;
+
+
+
+
+-- WITH절을 이용하여 인라인뷰 꺼내기
+WITH E AS
+(
+    SELECT deptno, round(avg(sal), 2) avg_sal
+    FROM emp
+    GROUP BY deptno
+    HAVING avg(sal) > (
+        SELECT avg(sal) FROM emp )
+)
+
+SELECT
+    E.deptno, D.dname, E.avg_sal
+FROM E
+INNER JOIN dept D
+    ON E.deptno = D.deptno
+ORDER BY deptno;
+
+
+
+
+-- 스칼라 서브쿼리
+SELECT
+    empno,
+    ename,
+    deptno,
+    ( SELECT dname FROM dept D WHERE D.deptno = E.deptno ) dname,
+    ( SELECT loc FROM dept WHERE deptno = E.deptno ) loc
+FROM emp E;
+
+--상호 연관 서브쿼리 (상관쿼리)
+--  메인쿼리와 서브쿼리의 관계를 이용해서 조회되는 서브쿼리
+--  메인쿼리의 테이블과 서브쿼리의 테이블이 연관을 가지도록 조건을 부여해서 사용하는 서브쿼리
+
+
+
+	
+	

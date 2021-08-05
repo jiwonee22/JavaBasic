@@ -1,0 +1,60 @@
+-- 조인, JOIN
+
+SELECT * FROM emp   -- SMITH, deptno == 20
+WHERE empno = 7369;
+
+SELECT * FROM dept  -- 20, RESEARCH
+WHERE deptno = 20;
+
+
+--조인 구문
+SELECT * FROM emp, dept; --테이블들의 모든 조합을 구한다
+
+SELECT * FROM emp, dept
+WHERE emp.deptno = dept.deptno; --공통된 데이터가 같은 조건으로 조회한다 (조인 조건)
+
+-- emp테이블 = 12행, 8컬럼
+-- dept테이블 = 4행, 3컬럼
+
+-- emp X dept 조인 = 48행(12*4), 11컬럼(8+3)
+
+ + 조인, JOIN
+  - 두 개 이상의 테이블을 한번에 SELECT(조회)하는 방법
+
+  - 조인되는 테이틀들의 모든 조합을 조회한다
+
+	-> 모든 행들의 조합 + 모든 컬럼의 조합
+
+	-> 조인되는 행들의 곱만큼, 조인되는 컬럼들의 합만큼 결과가 생긴다
+
+	ex)	emp TB : 12rows 8cols 
+		dept TB : 4rows 3cols
+
+		emp x dept : 48rows(12*4) 11cols(8+3)
+
+  - 의미있는 데이터를 추출하기 위해 조인 조건을 설정한다
+
+	-> Primary Key와 Foreign Key를 이용하여 조건절을 구성한다
+
+	** 조인 조건 : 조인되는 테이블들의 관계를 설정하는 조건문(WHERE절 이용)
+
+	 + Primary Key, PK, 기본키, 주키
+  - 테이블의 각 행(데이터)들을 구분하기 위한 식별데이터로 쓰이는 컬럼
+
+  --- 기본키 무결성 원칙 ---
+   해당 컬럼은 테이블에서 고유한 값을 가져야 한다 - UNIQUE
+   해당 컬럼은 NULL값을 가질 수 없다 - NOT NULL
+  --------------------------
+	ex)	emp.empno
+		dept.deptno
+
+
+ + Foreign Key, FK, 외래키, 참조키
+  - 다른 테이블의 컬럼을 참조하고 있는 컬럼
+  - 다른 테이블의 Primary Key를 참조한다
+
+  --- 참조 무결성 원칙 ---
+   참조 테이블의 기본키의 값으로 존재하는 데이터만 가질 수 있다
+  ------------------------
+	ex)	emp.deptno
+	
