@@ -1,0 +1,494 @@
+
+------------------------------------------------------------------------------------------------------------------------
+
+--문자타입 : VARCHAR2(n)
+
+CREATE TABLE type_test_02 (
+    data VARCHAR2(10)
+);
+DESC type_test_02;
+
+INSERT INTO type_test_02
+VALUES ( '1234567890' );
+INSERT INTO type_test_02
+VALUES ( '1234567890123456' );
+INSERT INTO type_test_02
+VALUES ( '일이삼사오육칠팔구십' );
+
+SELECT * FROM type_test_02;
+
+
+
+CREATE TABLE type_test_03 (
+    data1 VARCHAR2(10 BYTE),
+    data2 VARCHAR2(10 CHAR)
+);
+
+INSERT INTO type_test_03
+VALUES ( '일이삼', '일이삼사오육칠팔구십' );
+
+SELECT * FROM type_test_03;
+
+
+
+
+
+--CHAR(n) : 고정 길이 문자
+CREATE TABLE type_test_04 (
+    data1 CHAR,
+    data2 CHAR(10),
+    data3 CHAR(10 CHAR)
+);
+
+INSERT INTO type_test_04 (data1, data2, data3)
+VALUES( '1', '1234567890', '1234567890' );
+
+INSERT INTO type_test_04 (data1, data2, data3)
+VALUES( '1', '1234오육', '일이삼사오67890' );
+
+INSERT INTO type_test_04 ( data2 ) --data2 CHAR(10)
+VALUES( '123' );
+
+SELECT * FROM type_test_04;
+
+
+
+CREATE TABLE type_test_05 (
+    data1 CHAR(2000),
+    data2 VARCHAR2(4000)
+);
+
+
+
+
+
+--DATE : 날짜시간타입(datetime)
+CREATE TABLE type_test_06 (
+    data DATE
+);
+DESC type_test_06;
+
+INSERT INTO type_test_06
+VALUES ( sysdate );
+INSERT INTO type_test_06
+VALUES ( '2025/6/8' );
+INSERT INTO type_test_06
+VALUES ( '33/3/2' );
+
+SELECT to_char(data, 'yyyy/mm/dd') FROM type_test_06;
+
+SELECT systimestamp FROM dual;
+
+
+
+
+
+-- LONG
+CREATE TABLE type_test_07 (
+    data LONG
+);
+
+INSERT INTO type_test_07 VALUES ('안녕하세요');
+SELECT * FROM type_test_07;
+
+INSERT INTO type_test_07
+VALUES ( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare cursus tortor eget tincidunt. In luctus orci eu orci aliquam, id egestas lorem viverra. Pellentesque tristique posuere arcu eu aliquet. Nulla tellus est, fringilla et sapien vel, facilisis laoreet orci. Nulla cursus risus quis nulla auctor posuere. Maecenas interdum massa ex, ut tincidunt nisi maximus eu. Nam tincidunt dolor at tellus varius, eu tincidunt dolor posuere. Suspendisse potenti. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla et volutpat purus.
+
+Cras non condimentum erat. Aliquam erat volutpat. Nunc fermentum eget odio accumsan gravida. Maecenas varius in elit ac feugiat. Nulla a nunc purus. Nulla eu est vel risus scelerisque tristique nec sed nisi. Vivamus molestie vehicula eros. Proin condimentum libero eget sapien blandit imperdiet. Duis libero erat, eleifend vel erat nec, ullamcorper viverra risus. Suspendisse sit amet massa consectetur, tincidunt mauris eget, semper magna. Aenean molestie sed risus ac pulvinar. Vestibulum eu sollicitudin sapien. Donec aliquam laoreet justo id rutrum.
+
+Pellentesque nisl purus, pharetra suscipit nibh in, rutrum vulputate lacus. Suspendisse libero est, porttitor congue est at, fermentum semper arcu. Etiam vel eros et enim sagittis fermentum. Donec sagittis iaculis justo, hendrerit condimentum mi suscipit bibendum. Donec euismod tortor vel libero posuere aliquam. Sed ac tortor placerat, elementum ex id, ornare magna. Morbi sollicitudin nulla neque, nec vestibulum ex tristique in. Mauris et ante at urna ultricies cursus vitae ac urna. Suspendisse ut commodo quam. Curabitur finibus enim eget turpis finibus, eget condimentum magna fermentum. Nunc efficitur vestibulum ipsum, quis tempus ante efficitur et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+
+Etiam tempor elit nibh, quis porta elit auctor a. Donec accumsan lobortis enim, in fringilla nulla placerat non. Donec vehicula lectus quis volutpat convallis. Cras in interdum risus, eu sagittis ex. Praesent tempus felis enim, id interdum ante vestibulum sit amet. Aliquam vel risus sit amet quam luctus pulvinar a in elit. Donec vitae turpis sem.
+
+Maecenas sodales, tortor nec hendrerit vestibulum, magna ante laoreet lectus, nec tristique eros felis vel justo. Suspendisse potenti. Pellentesque finibus mi mi, in pulvinar magna blandit eget. Nulla vulputate tempus lobortis. Sed dui urna, fermentum hendrerit varius ac, cursus a dui. Praesent mollis blandit semper. Pellentesque sit amet neque nulla. Ut ut justo aliquam, egestas arcu blandit, fringilla felis. Nunc hendrerit enim lectus, eu hendrerit tortor lobortis vitae. Duis convallis pretium velit, non pulvinar lorem commodo ut. Sed vulputate gravida libero ut ornare. Donec consequat a massa eu aliquam. Nunc semper mattis elit, ac accumsan urna feugiat non. Mauris odio risus, rutrum vel felis id, finibus convallis tellus.' );
+
+
+SELECT * FROM type_test_07;
+
+
+INSERT INTO type_test_07
+VALUES ( '오직 할지니, 있으며, 보는 싹이 때문이다. 눈에 그들은 같지 주는 없는 아름다우냐? 피고, 꾸며 있을 피고 실현에 기관과 듣는다. 때에, 구하지 얼마나 가장 온갖 이것이야말로 듣는다. 인생에 못할 이성은 인생의 힘있다. 속에서 방황하였으며, 그들을 불러 사막이다. 물방아 고동을 목숨을 가진 불러 뼈 같이, 충분히 말이다. 이것이야말로 유소년에게서 거친 풀이 풍부하게 커다란 그들은 내는 부패뿐이다. 새가 이상의 실현에 황금시대를 가슴에 황금시대의 할지라도 역사를 그리하였는가?
+
+열락의 얼마나 사람은 남는 것이다. 대한 웅대한 설산에서 있으랴? 힘차게 찾아다녀도, 새가 유소년에게서 뭇 그러므로 대고, 청춘 이상은 칼이다. 뼈 방황하였으며, 새 크고 우리는 끝까지 이것이다. 이는 따뜻한 인생에 실현에 가장 평화스러운 것이다. 속잎나고, 구하지 예수는 싹이 소담스러운 간에 밝은 노년에게서 것이다. 따뜻한 있음으로써 실현에 풀이 봄바람을 곧 가는 우리 오아이스도 보라. 있는 인간이 구하지 끝까지 동력은 같으며, 것이다. 피어나는 역사를 청춘을 희망의 황금시대다. 그들은 천자만홍이 사라지지 사람은 인생의 있는 이것이야말로 봄바람이다.
+
+이상 그와 일월과 스며들어 물방아 위하여서, 방황하였으며, 대고, 안고, 있다. 구할 곳이 것이다.보라, 그들에게 같은 찾아 힘차게 것이 스며들어 끓는다. 인생을 속에 고동을 봄바람이다. 끝까지 위하여 꾸며 속에서 관현악이며, 있는 원질이 예가 만천하의 것이다. 같은 그들은 것은 아니더면, 풍부하게 사막이다. 보배를 사랑의 이상 봄바람이다. 역사를 위하여, 희망의 청춘의 설레는 이는 것이다. 커다란 뜨거운지라, 청춘 인간이 이것이다. 있는 무엇을 몸이 곳으로 광야에서 미묘한 교향악이다. 때까지 반짝이는 사라지지 풀이 아니한 산야에 방지하는 꽃 가슴이 것이다.' );
+
+
+
+INSERT INTO type_test_07
+VALUES ( '불러 이런 걱정도 딴은 아침이 무엇인지 멀리 말 이네들은 거외다. 시인의 멀리 다 피어나듯이 남은 별 자랑처럼 봅니다. 별을 하나에 아무 하나에 너무나 있습니다. 언덕 내 이름과, 이런 봅니다. 헤일 나의 때 계집애들의 오는 봅니다. 너무나 다 된 언덕 별이 계십니다. 이제 다하지 지나가는 나의 있습니다. 어머니 지나고 그리고 언덕 내일 있습니다. 풀이 속의 불러 무덤 너무나 다 남은 별 버리었습니다. 아름다운 하나에 릴케 강아지, 버리었습니다. 별들을 청춘이 말 이름을 옥 이제 하나에 버리었습니다.
+
+별에도 않은 불러 겨울이 써 그러나 나의 까닭입니다. 이름자를 라이너 않은 보고, 있습니다. 별들을 벌써 노루, 까닭입니다. 슬퍼하는 가득 소녀들의 별 강아지, 봄이 어머니 계십니다. 쉬이 별 아름다운 아스라히 하나에 차 둘 거외다. 토끼, 때 프랑시스 듯합니다. 책상을 시인의 라이너 우는 별빛이 아이들의 비둘기, 듯합니다. 내린 나는 지나가는 위에도 나는 아스라히 북간도에 무덤 시와 버리었습니다. 이름자를 별들을 애기 하나에 멀리 마디씩 무덤 때 까닭이요, 있습니다.
+
+그러나 이제 내린 비둘기, 마리아 거외다. 위에 내 너무나 때 멀리 하늘에는 그리워 하나에 계십니다. 내 마디씩 그러나 불러 별빛이 아침이 하나에 거외다. 사랑과 어머님, 릴케 버리었습니다. 보고, 묻힌 책상을 사랑과 까닭입니다. 강아지, 아침이 다하지 딴은 이런 하나에 남은 이름과, 까닭입니다. 풀이 위에 쉬이 비둘기, 까닭입니다. 하나에 슬퍼하는 아무 추억과 언덕 밤이 계십니다. 토끼, 차 프랑시스 버리었습니다. 애기 잔디가 언덕 강아지, 헤는 것은 이제 어머니, 새워 봅니다.
+
+아직 않은 잠, 아름다운 봅니다. 이름자 소학교 않은 듯합니다. 위에 겨울이 시와 이름과, 추억과 걱정도 봅니다. 나는 된 것은 봅니다. 계절이 사람들의 무성할 강아지, 추억과 거외다. 북간도에 라이너 아직 가난한 비둘기, 했던 딴은 노루, 동경과 있습니다. 가을로 어머님, 하늘에는 부끄러운 릴케 토끼, 이름과 자랑처럼 있습니다. 덮어 차 이 둘 노루, 써 별 이런 내 듯합니다. 가슴속에 이름자를 추억과 걱정도 어머니 차 봅니다.
+
+시와 덮어 밤을 가슴속에 그리고 별에도 하나에 아침이 프랑시스 계십니다. 하나에 흙으로 이제 이국 속의 가슴속에 멀듯이, 때 계십니다. 아스라히 덮어 노새, 까닭입니다. 위에 나의 흙으로 있습니다. 새겨지는 밤이 옥 한 별 이름과, 가득 별이 흙으로 있습니다. 하나의 파란 릴케 아직 하나에 어머님, 있습니다. 무엇인지 하나에 멀리 멀리 아침이 하나의 가을로 이네들은 사랑과 봅니다. 써 아직 어머니 이름과, 어머니, 까닭이요, 계십니다. 가을로 아무 별이 버리었습니다.
+
+멀리 그리워 잠, 그러나 어머니, 시와 하늘에는 별을 한 있습니다. 슬퍼하는 까닭이요, 헤는 없이 하나에 내일 가슴속에 별 거외다. 하나에 부끄러운 슬퍼하는 토끼, 불러 덮어 흙으로 봅니다. 남은 하나에 언덕 별 부끄러운 내일 까닭이요, 이런 계십니다. 계절이 멀듯이, 하나에 않은 나는 나는 다 있습니다. 이 시인의 가슴속에 별빛이 하늘에는 벌써 마리아 별 우는 있습니다. 가슴속에 소학교 잔디가 남은 언덕 피어나듯이 별 파란 봅니다. 프랑시스 내일 별에도 없이 봅니다. 된 아름다운 내 흙으로 언덕 이름과 봄이 있습니다.
+
+노루, 아름다운 다 사랑과 다 내린 듯합니다. 토끼, 다 이름을 때 있습니다. 아스라히 무덤 소녀들의 하나에 거외다. 강아지, 나의 비둘기, 이 있습니다. 다 가난한 애기 쓸쓸함과 까닭입니다. 이름과, 했던 나는 까닭입니다. 아름다운 옥 헤는 책상을 내린 이름과, 소학교 멀리 있습니다. 소녀들의 보고, 벌써 토끼, 별에도 별들을 강아지, 이름과, 까닭입니다. 너무나 사랑과 보고, 봅니다.
+
+위에도 사랑과 가을 봄이 무엇인지 내 이네들은 써 있습니다. 이름을 이름을 너무나 쓸쓸함과 했던 부끄러운 피어나듯이 듯합니다. 했던 옥 나는 하나에 이름과 이 하나에 있습니다. 별빛이 지나고 마디씩 말 어머님, 하나에 써 있습니다. 겨울이 언덕 써 무엇인지 못 프랑시스 까닭입니다. 하나의 하나에 가난한 토끼, 비둘기, 자랑처럼 나의 프랑시스 동경과 듯합니다. 이런 이 토끼, 애기 새워 하나 이름과 흙으로 있습니다. 별 패, 남은 별 말 많은 이네들은 이제 별들을 까닭입니다. 하나에 별 언덕 잔디가 이런 계십니다. 속의 이제 사람들의 언덕 같이 가득 시와 자랑처럼 까닭입니다.
+
+무덤 마리아 나의 사랑과 우는 지나고 흙으로 불러 봅니다. 위에 노새, 그리워 아직 멀리 경, 벌레는 까닭입니다. 오면 계절이 나는 북간도에 까닭입니다. 다 하나에 토끼, 써 듯합니다. 지나고 청춘이 책상을 계절이 나는 이 하나에 묻힌 계십니다. 된 위에 보고, 비둘기, 헤는 내일 듯합니다. 다하지 이름과 위에 노새, 같이 청춘이 이름을 딴은 까닭입니다. 써 피어나듯이 헤일 이런 별에도 봅니다. 없이 말 오면 동경과 거외다. 아이들의 나의 노새, 하나의 토끼, 계십니다. 시인의 별들을 새워 봄이 이름과 당신은 계십니다.
+
+북간도에 사람들의 내일 멀리 이름과, 이국 계십니다. 이름과, 하나의 쉬이 계십니다. 이름자를 까닭이요, 위에도 것은 이름과, 듯합니다. 하나에 프랑시스 하늘에는 시와 별 무덤 버리었습니다. 하늘에는 이네들은 위에 우는 있습니다. 오는 이제 쓸쓸함과 새워 봅니다. 헤는 내린 별 별 하늘에는 한 않은 라이너 밤이 까닭입니다. 이런 멀리 노루, 가난한 위에 별 속의 버리었습니다. 때 책상을 아이들의 이름과, 지나고 한 마리아 묻힌 있습니다. 경, 별이 언덕 오면 않은 계십니다. 가득 한 오는 있습니다.' );
+
+
+
+--에러, LONG타입은 테이블 당 한 개의 컬럼에만 적용할 수 있다
+CREATE TABLE type_test_08 (
+    data1 LONG,
+    data2 LONG
+);
+
+
+
+
+
+
+--CLOB
+CREATE TABLE type_test_08 (
+    data1 CLOB,
+    data2 CLOB
+);
+
+INSERT INTO type_test_08 ( data1 )
+VALUES ( '인생의 속에서 청춘 때문이다. 않는 피어나기 것은 더운지라 없으면, 광야에서 있다. 날카로우나 광야에서 위하여서, 뜨고, 목숨이 할지라도 사막이다. 가는 찾아다녀도, 뭇 청춘 갑 이성은 가치를 부패뿐이다. 예가 눈에 열락의 바이며, 봄바람을 소금이라 굳세게 것이다. 그들에게 낙원을 찾아 꽃이 교향악이다. 없으면, 없는 행복스럽고 그들의 아름답고 위하여 것이다. 방지하는 작고 더운지라 교향악이다. 열락의 피에 영원히 바이며, 희망의 사막이다.
+
+있는 두기 크고 때문이다. 그림자는 타오르고 보이는 품었기 사막이다. 찾아다녀도, 되는 구하지 유소년에게서 그와 같이 이것이야말로 사막이다. 트고, 밥을 실로 같이, 반짝이는 바이며, 인생에 방지하는 천지는 운다. 풀이 현저하게 곳이 부패뿐이다. 뛰노는 풀이 희망의 사막이다. 인생에 산야에 쓸쓸한 듣기만 수 이는 교향악이다. 천고에 바이며, 하였으며, 능히 낙원을 있을 무엇을 끓는 충분히 피다. 때에, 미인을 쓸쓸한 평화스러운 만천하의 것이다. 같은 때에, 가는 커다란 위하여 것이다. 실현에 힘차게 물방아 예가 대한 너의 열락의 황금시대다.
+
+되려니와, 위하여 기쁘며, 이상을 열락의 끓는다. 사라지지 유소년에게서 황금시대를 얼마나 아니한 곳이 내려온 청춘 사막이다. 두기 목숨을 있는 오직 청춘의 속에서 약동하다. 방황하여도, 아니더면, 같이, 끝까지 얼마나 품에 힘있다. 이상 속에서 내려온 이상, 가슴이 설산에서 만천하의 모래뿐일 보라. 내는 고행을 예수는 뜨거운지라, 용감하고 과실이 피에 품에 주며, 때문이다. 그들의 충분히 곳이 커다란 얼마나 소담스러운 행복스럽고 역사를 이상은 쓸쓸하랴? 듣기만 피고 소리다.이것은 있는가? 없으면, 품었기 위하여 하여도 우리 때까지 위하여 들어 뿐이다. 그들의 불어 속에 얼마나 할지니, 아름답고 끓는다.' );
+
+SELECT data1 FROM type_test_08;
+
+
+-- CLOB 데이터를 조회할 때는 DBMS_LOB.SUBSTR()함수를 사용해야한다
+SELECT DBMS_LOB.SUBSTR( data1, 10, 1 ) -- 처음부터 10글자 조회
+FROM type_test_08;
+
+SELECT DBMS_LOB.SUBSTR( data1, length(data1), 1 ) --전체 데이터 조회
+FROM type_test_08;
+
+-- 제약조건, 제약사항
+
+--NOT NULL
+
+CREATE TABLE cons_01 (
+    data VARCHAR2(10) NOT NULL
+);
+DESC cons_01;
+
+INSERT INTO cons_01 VALUES ( null ); -- 에러, NULL 입력 불가
+
+
+
+--제약조건 자료사전 : user_constraints
+SELECT * FROM user_constraints
+WHERE table_name = upper('cons_01');
+
+--테이블 자료사전 : user_tables, tabs
+SELECT * FROM user_tables;
+SELECT * FROM tabs;
+
+
+
+--제약조건에 이름 붙여서 설정하기
+CREATE TABLE cons_02 (
+    data VARCHAR2(10) CONSTRAINT NNDATA NOT NULL
+);
+SELECT * FROM user_constraints
+WHERE table_name = upper('cons_02');
+
+
+
+
+--제약조건 없이 테이블 생성
+CREATE TABLE cons_03(
+    data VARCHAR2(10) );
+
+--NOT NULL 제약조건을 테이블 생성 후에 적용하기
+-- -> MODIFY col 구문을 사용해야한다
+ALTER TABLE cons_03
+MODIFY data NOT NULL;
+
+SELECT * FROM user_constraints
+WHERE table_name = upper('cons_03');
+
+
+
+
+--UNIQUE
+CREATE TABLE cons_04 (
+    data VARCHAR2(10) CONSTRAINT UKDATA UNIQUE
+);
+SELECT * FROM user_constraints
+WHERE table_name = upper('cons_04');
+
+INSERT INTO cons_04 VALUES ('BANANA');
+--INSERT INTO cons_04 VALUES ('BANANA'); --에러, 중복데이터 삽입 안됨
+SELECT * FROM cons_04;
+
+
+
+DROP TABLE cons_05; --테이블 삭제, 제약조건도 같이 삭제된다
+CREATE TABLE cons_05 (
+    data1 NUMBER,
+    data2 NUMBER CONSTRAINT UKDATA2 UNIQUE, --컬럼 레벨로 UNIQUE 제약조건 설정
+    data3 NUMBER,
+
+    CONSTRAINT UKDATA1 UNIQUE ( data1 ), --테이블 레벨로 UNIQUE 제약조건 설정
+    CONSTRAINT UKDATA3 UNIQUE ( data3 )
+);
+
+--제약조건 자료사전
+SELECT * FROM user_constraints
+WHERE table_name = upper('cons_05')
+ORDER BY constraint_name;
+
+--제약조건이 걸려있는 컬럼 자료사전
+SELECT * FROM user_cons_columns
+WHERE table_name = upper('cons_05');
+
+
+
+--제약조건 조회 쿼리
+SELECT
+    A.TABLE_NAME,
+	SUBSTR(A.COLUMN_NAME,1,15) COLUMN_NAME,
+	DECODE(B.CONSTRAINT_TYPE,
+		'P','PRIMARY KEY',
+		'U','UNIQUE KEY',
+		'C','CHECK OR NOT NULL',
+		'R','FOREIGN KEY'
+	) CONSTRAINT_TYPE,
+	A.CONSTRAINT_NAME,
+    SEARCH_CONDITION
+FROM USER_CONS_COLUMNS A, USER_CONSTRAINTS B
+WHERE A.TABLE_NAME = UPPER('&table_name')
+	AND A.TABLE_NAME = B.TABLE_NAME
+	AND A.CONSTRAINT_NAME = B.CONSTRAINT_NAME
+ORDER BY 1, 2;
+
+SELECT * FROM USER_CONSTRAINTS; -- 사용자의 모든 제약사항
+SELECT * FROM USER_CONS_COLUMNS; -- 컬럼에 해당하는 제약사항 조회
+
+
+
+
+
+--CHECK
+CREATE TABLE cons_06 (
+    data NUMBER CHECK( data>=1 AND data<=100 )
+);
+
+INSERT INTO cons_06 VALUES ( -100 );
+INSERT INTO cons_06 VALUES ( 123 );
+INSERT INTO cons_06 VALUES ( 54 );
+
+SELECT * FROM cons_06;
+
+
+
+CREATE TABLE cons_07 (
+    data VARCHAR2(1) CHECK ( data IN ('Y', 'N') )
+);
+
+INSERT INTO cons_07 VALUES ('Y');
+INSERT INTO cons_07 VALUES ('N');
+
+INSERT INTO cons_07 VALUES ('y'); --에러, 오라클의 문자데이터는 대소문자를 구분한다
+
+
+
+
+
+--DEFAULT
+CREATE TABLE cons_08 (
+    data1 NUMBER DEFAULT 10,
+    data2 DATE DEFAULT SYSDATE,
+    data3 VARCHAR2(10) DEFAULT 'HI' NOT NULL
+);
+
+--제약조건 자료사전 조회 (default 제약조건은 조회되지 않는다)
+SELECT * FROM user_constraints
+WHERE table_name = upper('cons_08');
+
+--컬럼 정보 자료사전 조회
+SELECT * FROM user_tab_columns
+WHERE table_name = upper('cons_08');
+
+
+
+--DEFAULT제약조건은 NULL값을 대체하는 값이 아니다
+INSERT INTO cons_08
+VALUES ( null, null, 'AA' );
+SELECT * FROM cons_08;
+
+--컬럼의 값을 아예 명시하지 않고 INSERT할 때 DEFAULT가 적용된다
+INSERT INTO cons_08 ( data3 )
+VALUES ( 'BB' );
+
+
+INSERT INTO cons_08; --에러, 문법이 완성되지 않음 (VALUES 절이 없다)
+INSERT INTO cons_08 VALUES (); --에러, VALUES절에 아무 데이터도 없음
+
+
+
+
+
+--PRIMARY KEY
+CREATE TABLE cons_09 (
+    no NUMBER CONSTRAINT PK_NO PRIMARY KEY, --이름을 지정하며, 컬럼 레벨로 설정함
+    data VARCHAR2(10) NOT NULL
+);
+
+CREATE TABLE cons_10 (
+    no NUMBER PRIMARY KEY, --이름없이 컬럼 레벨로 설정함
+    data VARCHAR2(10) NOT NULL
+);
+
+CREATE TABLE cons_11 (
+    no NUMBER,
+    data VARCHAR2(10) NOT NULL,
+    CONSTRAINT PK_CONS11 PRIMARY KEY ( no ) --이름을 부여하며, 테이블 레벨로 설정함
+);
+
+CREATE TABLE cons_12 (
+    no NUMBER,
+    data VARCHAR2(10) NOT NULL,
+    PRIMARY KEY ( no ) --이름 없이, 테이블 레벨로 설정함 (하지마세요!)
+);
+
+
+
+--FOREIGN KEY
+CREATE TABLE cons_13 (
+    num NUMBER,
+    data VARCHAR2(20),
+    CONSTRAINT FK_NUM FOREIGN KEY ( num ) --FK설정, 자신 테이블의 컬럼으로 설정한다
+        REFERENCES cons_12 ( no ) --참조할 PK설정, 참조할 테이블과 컬럼명으로 설정한다
+);
+
+
+
+
+
+
+
+
+CREATE TABLE pk_test (
+    no NUMBER,
+    data VARCHAR2(20),
+    CONSTRAINT pkno PRIMARY KEY ( no ) );
+
+CREATE TABLE fk_test (
+    id VARCHAR2(30),
+    no NUMBER,
+    CONSTRAINT pkid PRIMARY KEY ( id ),
+    CONSTRAINT fkno FOREIGN KEY ( no )
+        REFERENCES pk_test ( no ) );
+
+INSERT INTO pk_test VALUES ( 1, 'Apple' );
+INSERT INTO pk_test VALUES ( 2, 'Banana' );
+INSERT INTO pk_test VALUES ( 3, 'Cherry' );
+
+INSERT INTO fk_test VALUES ( 'A', 10 ); --에러, 10은 참조대상 PK의 값으로 존재하지 않는다
+INSERT INTO fk_test VALUES ( 'A', 1 );
+INSERT INTO fk_test VALUES ( 'B', 2 );
+
+
+--에러, PK의 값 '1'은 FK가 참조하고 있는 값이기때문에 삭제할 수 없다
+DELETE pk_test WHERE no = 1;
+
+--FK가 참조하고 있지 않은 '3'은 잘 지워진다
+DELETE pk_test WHERE no = 3;
+
+SELECT * FROM pk_test;
+SELECT * FROM fk_test;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--ON DELETE CASCADE
+
+--테이블 삭제
+DROP TABLE fk_test;
+DROP TABLE pk_test;
+
+CREATE TABLE pk_test (
+    no NUMBER,
+    data VARCHAR2(20),
+    CONSTRAINT pkno PRIMARY KEY ( no ) );
+
+CREATE TABLE fk_test (
+    id VARCHAR2(30),
+    no NUMBER,
+    CONSTRAINT pkid PRIMARY KEY ( id ),
+    CONSTRAINT fkno FOREIGN KEY ( no )
+        REFERENCES pk_test ( no )
+        ON DELETE CASCADE -- PK가 지워지면 FK도 같이 지워지도록 설정한다
+);
+
+INSERT INTO pk_test VALUES ( 1, 'Apple' );
+INSERT INTO pk_test VALUES ( 2, 'Banana' );
+INSERT INTO pk_test VALUES ( 3, 'Cherry' );
+
+INSERT INTO fk_test VALUES ( 'A', 1 );
+INSERT INTO fk_test VALUES ( 'B', 2 );
+
+
+
+--ON DELETE CASCADE 설정 때문에, PK와 FK가 모두 지워진다
+DELETE pk_test WHERE no = 1;
+
+SELECT * FROM pk_test;
+SELECT * FROM fk_test;
+
+
+
+
+--ON DELETE SET NULL
+
+--테이블 삭제
+DROP TABLE fk_test;
+DROP TABLE pk_test;
+
+CREATE TABLE pk_test (
+    no NUMBER,
+    data VARCHAR2(20),
+    CONSTRAINT pkno PRIMARY KEY ( no ) );
+
+CREATE TABLE fk_test (
+    id VARCHAR2(30),
+    no NUMBER,
+    CONSTRAINT pkid PRIMARY KEY ( id ),
+    CONSTRAINT fkno FOREIGN KEY ( no )
+        REFERENCES pk_test ( no )
+        ON DELETE SET NULL -- PK가 지워지면 FK는 NULL값으로 변경한다
+);
+
+INSERT INTO pk_test VALUES ( 1, 'Apple' );
+INSERT INTO pk_test VALUES ( 2, 'Banana' );
+INSERT INTO pk_test VALUES ( 3, 'Cherry' );
+
+INSERT INTO fk_test VALUES ( 'A', 1 );
+INSERT INTO fk_test VALUES ( 'B', 2 );
+
+--ON DELETE CASCADE 설정 때문에, PK와 FK가 모두 지워진다
+DELETE pk_test WHERE no = 1;
+
+SELECT * FROM pk_test;
+SELECT * FROM fk_test;
