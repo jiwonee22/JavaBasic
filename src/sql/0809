@@ -452,7 +452,8 @@ INSERT INTO fk_test VALUES ( 'B', 2 );
 
 
 --ON DELETE CASCADE 설정 때문에, PK와 FK가 모두 지워진다
-DELETE pk_test WHERE no = 1;
+DELETE pk_test WHERE no = 1;iu
+
 
 SELECT * FROM pk_test;
 SELECT * FROM fk_test;
