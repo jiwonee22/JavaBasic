@@ -17,11 +17,11 @@ public class LeapYear {
 		int year = 0;
 		year = sc.nextInt();
 		
-		if((year%4 == 0 && year % 100 != 0) || year % 400 == 0) {
-			System.out.println("윤년입니다.");
-		} else {
-			System.out.println("평년입니다.");
-		}
+//		if((year%4 == 0 && year % 100 != 0) || year % 400 == 0) {
+//			System.out.println("윤년입니다.");
+//		} else {
+//			System.out.println("평년입니다.");
+//		}
 		
 		// 2. 구하고자하는 연도의 1월 1일은 무슨요일인지 구하기
 		
@@ -31,22 +31,50 @@ public class LeapYear {
 		// 4로 나누어 떨어지는 윤년 횟수를 더하고,
 		//	100으로 나누어 떨어지는 평년은 빼고,
 		//	400으로 나누어 떨어지는 윤년은 다시 더함
-		int entireday = (365 * (year - 1) + ((year - 1) / 4) - ((year - 1) / 100) + ((year - 1) / 400));
+		int entireDay = (365 * (year - 1) + ((year - 1) / 4) - ((year - 1) / 100) + ((year - 1) / 400));
 
 		String[] day = new String[7];
 		
 		day[0] = "월요일"; day[1] = "화요일"; day[2] = "수요일";
 		day[3] = "목요일"; day[4] = "금요일"; day[5] = "토요일"; day[6] = "일요일";
 		
-		int mod = entireday % 7;
+		int mod = entireDay % 7;
 		System.out.println(day[mod]);
 		
 		
-		sc.close();
+		// 3. 2016년 1월 1일은 금요일입니다. 2016년 A월 B일은 무슨 요일일까요?
 		
+		System.out.print("월을 입력하세요 : ");
+		int A = sc.nextInt();
+		sc.nextLine(); //버퍼비우기
+		System.out.print("일을 입력하세요 : ");
+		int B = sc.nextInt();
 		
+		int sumDay = 0;
 		
+		if((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+			int[] date = { 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+	
+			for(int i=0; i<A-1; i++){
+				sumDay = sumDay + date[i];
+			}
+			
+			sumDay = sumDay + B - 1;
+			
+		} else {
+			int[] date = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+			
+			for(int i=0; i<A-1; i++){
+				sumDay = sumDay + date[i];
+			}
+			
+			sumDay = sumDay + B - 1;
+
+		}
 		
+		int modDay = (sumDay % 7 + mod) % 7;
+		System.out.println(day[modDay]);
+
 		
 		
 	}
