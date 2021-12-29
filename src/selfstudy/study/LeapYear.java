@@ -3,7 +3,6 @@ package selfstudy.study;
 import java.util.Scanner;
 
 public class LeapYear {
-
 	public static void main(String[] args) {
 		
 		//연도가 4로 나누어 떨어지면 윤년
