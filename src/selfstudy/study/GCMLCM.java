@@ -33,7 +33,7 @@ public class GCMLCM {
 		//A, B중 큰 수를 max에 저장하고 작은 수를 min에 저장해서 문제를 푼다
 		
 		//최대공약수
-		for(int i=max; i>=1; i--) {
+		for(int i=min; i>=1; i--) {
 			
 			if((max%i) == 0 && (min%i) == 0) {
 				System.out.print(A + "와 " + B + "의 최대공약수 : " + i);
